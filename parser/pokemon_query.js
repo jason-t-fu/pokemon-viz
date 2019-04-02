@@ -2,12 +2,40 @@ const https = require('https');
 const fs = require('fs');
 
 async function writePokemon() {
-  const totalPokemon = 6;
+  const totalPokemon = 151;
+  let stringifiedData = "";
 
   for (let i = 1; i <= totalPokemon ; i++) {
     let x = await getPokemonInfo(i);
-    console.log(x.name);
+
+    let data = {
+      name: x.name,
+      types: x.types,
+      stats: x.stats
+    };
+    console.log(data);
+    stringifiedData += JSON.stringify(data);
+
+    // await delayNextQuery();
   }
+
+  fs.writeFile('pokemonData.txt', stringifiedData, err => {
+    if (err) throw err;
+    console.log('File has been saved.');
+  });
+}
+
+
+/* 
+  600ms delay for API query limits?
+*/
+function delayNextQuery() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log('delayed');
+      resolve();
+    }, 600);
+  });
 }
 
 function getPokemonInfo(pokemonId) {
@@ -24,25 +52,11 @@ function getPokemonInfo(pokemonId) {
         resolve(JSON.parse(data));
       });
     }).on('error', error => {
-      console.log(error.message);
+      reject(error.message);
     });
   });
 
-  // let xhr = new XMLHttpRequest();
-  // let promise = new Promise(function(resolve, reject) {
-  //   xhr.onreadystatechange = function () {
-  //     if (this.readyState === 4 && this.status === 200) {
-  //       resolve(JSON.parse(this.responseText));
-  //     }
-  //   };
-  // });
-
-  // xhr.open('GET', `https://pokeapi.co/api/v2/pokemon/${pokemonId}/`);
   return promise;
 }
-
-// getPokemonInfo(1).then(res => {
-//   console.log(res.name);
-// });
 
 writePokemon();
