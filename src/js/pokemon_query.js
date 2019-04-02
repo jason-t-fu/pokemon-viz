@@ -3,23 +3,25 @@ const fs = require('fs');
 
 async function writePokemon() {
   const totalPokemon = 151;
-  let stringifiedData = "";
+  let stringifiedData = {};
 
   for (let i = 1; i <= totalPokemon ; i++) {
-    let x = await getPokemonInfo(i);
+    let pokemonInfo = await getPokemonInfo(i);
 
     let data = {
-      name: x.name,
-      types: x.types,
-      stats: x.stats
+      id: i,
+      name: pokemonInfo.name,
+      types: pokemonInfo.types.map(entry => entry.type.name),
+      stats: pokemonInfo.stats.map(entry => ({[entry.stat.name]: entry.base_stat})),
+      sprite: pokemonInfo.sprites.front_default
     };
-    console.log(data);
-    stringifiedData += JSON.stringify(data);
-
+    console.log(data.name);
+    
+    stringifiedData[i] = data;
     // await delayNextQuery();
   }
 
-  fs.writeFile('pokemonData.txt', stringifiedData, err => {
+  fs.writeFile('src/assets/pokemonData.txt', JSON.stringify(stringifiedData), err => {
     if (err) throw err;
     console.log('File has been saved.');
   });
@@ -27,7 +29,7 @@ async function writePokemon() {
 
 
 /* 
-  600ms delay for API query limits?
+  600ms delay for API query limits? Site says 100 queries per min.
 */
 function delayNextQuery() {
   return new Promise((resolve, reject) => {
