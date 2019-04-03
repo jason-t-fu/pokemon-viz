@@ -21,7 +21,7 @@ async function writePokemon() {
     // await delayNextQuery();
   }
 
-  fs.writeFile('src/assets/pokemonData.txt', JSON.stringify(stringifiedData), err => {
+  fs.writeFile('src/assets/pokemonData.json', JSON.stringify(stringifiedData), err => {
     if (err) throw err;
     console.log('File has been saved.');
   });
