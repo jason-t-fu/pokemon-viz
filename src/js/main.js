@@ -6,6 +6,7 @@ const POKEMON_TYPES = ['fire', 'water', 'grass', 'electric', 'flying', 'normal',
 const POKEMON_DATA = "assets/pokemonData.json";
 
 document.addEventListener('DOMContentLoaded', () => {
+  window.d3 = d3;
   loadContent();
 });
 
@@ -31,9 +32,10 @@ function loadContent() {
   let link = svg.append('g').selectAll('.link');
   let node = svg.append('g').selectAll('.node');
 
+  let root;
   d3.json("assets/pokemonData.json").then(data => {
-    let x = packageHierarchy(data);
-    console.log(x);
+    root = packageHierarchy(data).count();
+    window.root = root;
   });
 
 }
