@@ -17,7 +17,7 @@ async function writePokemon() {
     };
     console.log(data.name);
     
-    stringifiedData[i] = data;
+    stringifiedData[data.name] = data;
     // await delayNextQuery();
   }
 
