@@ -8,11 +8,16 @@ async function writePokemon() {
   for (let i = 1; i <= totalPokemon ; i++) {
     let pokemonInfo = await getPokemonInfo(i);
 
+    let types = {};
+    let stats = {};
+    pokemonInfo.types.forEach(entry => types[entry.slot] = entry.type.name);
+    pokemonInfo.stats.forEach(entry => stats[entry.stat.name] = entry.base_stat);
+
     let data = {
       id: i,
       name: pokemonInfo.name,
-      types: pokemonInfo.types.map(entry => entry.type.name),
-      stats: pokemonInfo.stats.map(entry => ({[entry.stat.name]: entry.base_stat})),
+      types: types,
+      stats: stats,
       sprite: pokemonInfo.sprites.front_default
     };
     console.log(data.name);
