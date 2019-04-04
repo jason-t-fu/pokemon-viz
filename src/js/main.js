@@ -3,6 +3,24 @@ const POKEMON_TYPES = new Set(['fire', 'water', 'grass', 'electric', 'flying', '
                        'fighting', 'ground', 'rock', 'bug', 'poison', 'ghost',
                        'ice', 'psychic', 'dragon']);
 
+const TYPE_COLORS = {
+  "normal": "rgb(170,167,124)",
+  "fighting": "rgb(204,43,44)",
+  "flying": "rgb(166,148,235)",
+  "poison": "rgb(167,68,156)",
+  "ground": "rgb(231,189,114)",
+  "rock": "rgb(190,158,71)",
+  "bug": "rgb(170,181,61)",
+  "ghost": "rgb(112,91,149)",
+  "fire": "rgb(253,125,61)",
+  "water": "rgb(84,149,235)",
+  "grass": "rgb(108,198,94)",
+  "electric": "rgb(255,205,77)",
+  "psychic": "rgb(255,87,135)",
+  "ice": "rgb(138,216,215)",
+  "dragon": "rgb(104,73,240)"
+};
+
 const POKEMON_DATA = "assets/pokemonData.json";
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -19,11 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
 function loadContent(data) {
   const links = data.links.map(d => Object.create(d));
   const nodes = data.nodes.map(d => Object.create(d));
-  debugger;
 
   const simulation = d3.forceSimulation(nodes)
                        .force('link', d3.forceLink(links).id(d => d.name))
-                       .force('charge', d3.forceManyBody())
+                       .force('charge', d3.forceManyBody().strength(-10))
+                       .force('collide', d3.forceCollide().radius(d => d.radius * 1.2))
                        .force("center", d3.forceCenter(300, 300));
 
   const svg = d3.select('body').append('svg')
@@ -44,11 +62,15 @@ function loadContent(data) {
                 .selectAll('circle')
                 .data(nodes)
                 .join('circle')
-                .attr('r', 5)
-                .call(drag(simulation));
-                // .attr('fill', color);
-
+                .attr('r', d => d.radius)
+                .call(drag(simulation))
+                .attr('fill', d => TYPE_COLORS[d.group]);
+                
   node.append('title').text(d => d.name);
+  // node.append('text').text(d => d.name).attr('dx', 12).attr('dy','.35em')
+      // .attr('text-anchor', 'middle')
+      // .attr('fill', "#000");
+      // .attr('dy', d => d.radius * 25 / 100);
 
   simulation.on('tick', () => {
     link.attr('x1', d => d.source.x)
@@ -69,11 +91,12 @@ function createDataAndLinks(pokemonData) {
     links: []
   };
 
-  //Nodes
+  // Type Nodes
   [...POKEMON_TYPES].forEach(type => {
     data.nodes.push({
       name: type,
-      group: type
+      group: type,
+      radius: 20
     });
   });
 
@@ -81,6 +104,7 @@ function createDataAndLinks(pokemonData) {
   Object.keys(pokemonData).forEach(key => {
     let pokemon = pokemonData[key];
     pokemon.group = pokemon.types[1];
+    pokemon.radius = 5;
     data.nodes.push(pokemon);
 
     Object.values(pokemon.types).forEach(type => {
@@ -92,8 +116,7 @@ function createDataAndLinks(pokemonData) {
       }
     });
   });
-
-  debugger;
+  
   return data;
 }
 
@@ -168,60 +191,60 @@ function drag(simulation) {
 //              .text(d => d.data.name);
 // }
 
-function createPaths(nodes) {
-  var map = {},
-    paths = [];
+// function createPaths(nodes) {
+//   var map = {},
+//     paths = [];
 
-  // Compute a map from name to node.
-  nodes.forEach(function (d) {
-    map[d.data.name] = d;
-  });
-  // For each import, construct a link from the source to target node.
-  nodes.forEach(function (d) {
-    if (d.data.parents) d.data.parents.forEach(function (i) {
-      paths.push(map[d.data.name].path(map[i.name]));
-    });
-  });
-  debugger;
-  return paths;
-}
+//   // Compute a map from name to node.
+//   nodes.forEach(function (d) {
+//     map[d.data.name] = d;
+//   });
+//   // For each import, construct a link from the source to target node.
+//   nodes.forEach(function (d) {
+//     if (d.data.parents) d.data.parents.forEach(function (i) {
+//       paths.push(map[d.data.name].path(map[i.name]));
+//     });
+//   });
+//   debugger;
+//   return paths;
+// }
 
-function createHierarchy(pokemonList) {
-  let root = {
-    "": {
-      name: "",
-      children: []
-    }
-  };
+// function createHierarchy(pokemonList) {
+//   let root = {
+//     "": {
+//       name: "",
+//       children: []
+//     }
+//   };
 
-  let types = { };
-  POKEMON_TYPES.forEach(type => {
-    types[type] = {
-      name: type,
-      parent: root[""],
-      children: [],
-    };
-  });
+//   let types = { };
+//   POKEMON_TYPES.forEach(type => {
+//     types[type] = {
+//       name: type,
+//       parent: root[""],
+//       children: [],
+//     };
+//   });
 
-  root[""].children = POKEMON_TYPES.map(type => {
-    return types[type];
-  });
+//   root[""].children = POKEMON_TYPES.map(type => {
+//     return types[type];
+//   });
 
-  Object.keys(pokemonList).forEach(key => {
-    let pokemon = pokemonList[key];
-    pokemon.parents = [];
-    pokemon.types.forEach(type => {
-      if (types[type]) {
-        pokemon.parents.push(types[type]);
-        types[type].children.push(pokemon);
-      }
-    });
-  });
+//   Object.keys(pokemonList).forEach(key => {
+//     let pokemon = pokemonList[key];
+//     pokemon.parents = [];
+//     pokemon.types.forEach(type => {
+//       if (types[type]) {
+//         pokemon.parents.push(types[type]);
+//         types[type].children.push(pokemon);
+//       }
+//     });
+//   });
 
-  Object.assign(root, types, pokemonList);
-  debugger;
-  return d3.hierarchy(root[""]).count();
-}
+//   Object.assign(root, types, pokemonList);
+//   debugger;
+//   return d3.hierarchy(root[""]).count();
+// }
 
 /*
 

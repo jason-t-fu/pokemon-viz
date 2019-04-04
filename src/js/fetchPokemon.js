@@ -10,7 +10,12 @@ async function writePokemon() {
 
     let types = {};
     let stats = {};
-    pokemonInfo.types.forEach(entry => types[entry.slot] = entry.type.name);
+    pokemonInfo.types.forEach(entry => {
+      // Need specific case for fairy type, nonexistent in Gen 1
+      if (entry.type.name !== 'fairy') types[entry.slot] = entry.type.name;
+    });
+    // Then check for empty types (clefairy and clefable)
+    if (!Object.keys(types).length) types[1] = "normal";
     pokemonInfo.stats.forEach(entry => stats[entry.stat.name] = entry.base_stat);
 
     let data = {

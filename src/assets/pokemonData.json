@@ -562,7 +562,7 @@
     "id": 35,
     "name": "clefairy",
     "types": {
-      "1": "fairy"
+      "1": "normal"
     },
     "stats": {
       "speed": 35,
@@ -578,7 +578,7 @@
     "id": 36,
     "name": "clefable",
     "types": {
-      "1": "fairy"
+      "1": "normal"
     },
     "stats": {
       "speed": 60,
@@ -626,8 +626,7 @@
     "id": 39,
     "name": "jigglypuff",
     "types": {
-      "1": "normal",
-      "2": "fairy"
+      "1": "normal"
     },
     "stats": {
       "speed": 20,
@@ -643,8 +642,7 @@
     "id": 40,
     "name": "wigglytuff",
     "types": {
-      "1": "normal",
-      "2": "fairy"
+      "1": "normal"
     },
     "stats": {
       "speed": 45,
@@ -1992,8 +1990,7 @@
     "id": 122,
     "name": "mr-mime",
     "types": {
-      "1": "psychic",
-      "2": "fairy"
+      "1": "psychic"
     },
     "stats": {
       "speed": 90,
