@@ -23,6 +23,9 @@ const TYPE_COLORS = {
 
 const POKEMON_DATA = "assets/pokemonData.json";
 
+const WIDTH = 800;
+const HEIGHT = 600;
+
 document.addEventListener('DOMContentLoaded', () => {
   window.d3 = d3;
 
@@ -33,53 +36,60 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-
 function loadContent(data) {
   const links = data.links.map(d => Object.create(d));
   const nodes = data.nodes.map(d => Object.create(d));
 
   const simulation = d3.forceSimulation(nodes)
                        .force('link', d3.forceLink(links).id(d => d.name))
-                       .force('charge', d3.forceManyBody().strength(-10))
+                       .force('charge', d3.forceManyBody().strength(-20))
                        .force('collide', d3.forceCollide().radius(d => d.radius * 1.2))
-                       .force("center", d3.forceCenter(300, 300));
+                       .force("center", d3.forceCenter(WIDTH / 2, HEIGHT / 2));
 
-  const svg = d3.select('body').append('svg')
-    .attr('width', 600)
-    .attr('height', 600);
+  const svg = d3.select('svg')
+                .attr('width', WIDTH)
+                .attr('height', HEIGHT);
 
-  const link = svg.append('g')
+  const node = svg.selectAll('g').data(nodes);
+  const link = svg.selectAll('g').data(links);
+
+  let linkEnter = link.enter().append('g');
+  let line = linkEnter.append('line')
                 .attr("stroke", "#999")
                 .attr("stroke-opacity", 0.6)
-                .attr('stroke-width', 1)
-                .selectAll('line')
-                .data(links)
-                .join("line");
+                .attr('stroke-width', 1);
 
-  const node = svg.append('g')
+  let nodeEnter = node.enter().append('g');    
+  let circle = nodeEnter.append('circle')
                 .attr("stroke", "#fff")
                 .attr("stroke-width", 1.5)
-                .selectAll('circle')
-                .data(nodes)
-                .join('circle')
                 .attr('r', d => d.radius)
-                .call(drag(simulation))
-                .attr('fill', d => TYPE_COLORS[d.group]);
-                
-  node.append('title').text(d => d.name);
-  // node.append('text').text(d => d.name).attr('dx', 12).attr('dy','.35em')
-      // .attr('text-anchor', 'middle')
-      // .attr('fill', "#000");
-      // .attr('dy', d => d.radius * 25 / 100);
+                .attr('fill', d => TYPE_COLORS[d.group])
+                .call(drag(simulation));
+
+  nodeEnter.append('title').text(d => d.name);
+  nodeText = nodeEnter.append('text').text(d => POKEMON_TYPES.has(d.name) ? d.name : "")
+                      .attr('text-anchor', 'middle')
+                      .attr('font-size', '8px')
+                      .attr('class', 'unselectable')
+                      .style('fill', 'white')
+                      .style('text-transform', 'uppercase')
+                      .style('font-family', 'sans-serif')
+                      .style('user-select', 'none')
+                      .call(drag(simulation));
 
   simulation.on('tick', () => {
-    link.attr('x1', d => d.source.x)
-        .attr('y1', d => d.source.y)
-        .attr('x2', d => d.target.x)
-        .attr('y2', d => d.target.y);
 
-    node.attr('cx', d => d.x)
-        .attr('cy', d => d.y);
+    circle.attr('cx', d => d.x = Math.max(d.radius, Math.min(WIDTH - d.radius, d.x)))
+      .attr('cy', d => d.y = Math.max(d.radius, Math.min(HEIGHT - d.radius, d.y)));
+    
+    nodeText.attr('x', d => d.x = Math.max(d.radius, Math.min(WIDTH - d.radius, d.x)))
+      .attr('y', d => d.y = Math.max(d.radius, Math.min(HEIGHT - d.radius, d.y)) + 2);
+
+    line.attr('x1', d => d.source.x)
+      .attr('y1', d => d.source.y)
+      .attr('x2', d => d.target.x)
+      .attr('y2', d => d.target.y);
   });
 
   return svg.node();
@@ -104,7 +114,7 @@ function createDataAndLinks(pokemonData) {
   Object.keys(pokemonData).forEach(key => {
     let pokemon = pokemonData[key];
     pokemon.group = pokemon.types[1];
-    pokemon.radius = 5;
+    pokemon.radius = 10;
     data.nodes.push(pokemon);
 
     Object.values(pokemon.types).forEach(type => {
@@ -143,6 +153,8 @@ function drag(simulation) {
     .on("drag", dragged)
     .on("end", dragended);
 }
+
+
 
 // function loadContent(data) {
 //   let diameter = 960;
