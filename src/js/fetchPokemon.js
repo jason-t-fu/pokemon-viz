@@ -1,6 +1,15 @@
 const https = require('https');
 const fs = require('fs');
 
+const LONG_TO_SHORT_TYPE = {
+  'hp': 'HP',
+  'attack': 'Atk',
+  'defense': 'Def',
+  'special-attack': 'SpAtk',
+  'special-defense': 'SpDef',
+  'speed': 'Spd'
+};
+
 async function writePokemon() {
   const totalPokemon = 151;
   let stringifiedData = {};
@@ -9,14 +18,18 @@ async function writePokemon() {
     let pokemonInfo = await getPokemonInfo(i);
 
     let types = {};
-    let stats = {};
     pokemonInfo.types.forEach(entry => {
       // Need specific case for fairy type, nonexistent in Gen 1
       if (entry.type.name !== 'fairy') types[entry.slot] = entry.type.name;
     });
     // Then check for empty types (clefairy and clefable)
     if (!Object.keys(types).length) types[1] = "normal";
-    pokemonInfo.stats.forEach(entry => stats[entry.stat.name] = entry.base_stat);
+    let stats = pokemonInfo.stats.map(entry => {
+      return {
+        axis: LONG_TO_SHORT_TYPE[entry.stat.name],
+        value: entry.base_stat
+      };
+    });
 
     let data = {
       id: i,

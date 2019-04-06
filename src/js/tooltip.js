@@ -20,18 +20,39 @@ Tooltip.prototype.mouseover = function (d) {
 };
 
 Tooltip.prototype.mousemove = function (d) {
-
+  let midX = window.innerWidth / 2;
+  let midY = window.innerHeight / 2;
   let x = event.x;
   let y = event.y;
+  let tooltipWidth = 279;
+  let tooltipHeight = 406;
+
+  //279x406
+  if  (x > midX && y > midY) {//Quadrant 4
+    x -= (tooltipWidth + 10);
+    y -= (tooltipHeight + 10);
+  }
+  else if (x > midX && y < midY) { //Quadrant 2
+    x -= (tooltipWidth + 10);
+    y += 10;
+  }
+  else if (x < midX && y > midY) { //Quadrant 3
+    x += 10;
+    y -= (tooltipHeight + 10);
+  }
+  else {                   //Quadrant 1 and origin
+    x += 10;
+    y += 10;
+  }
   // debugger;
   this.tooltip
-    .style('left', x + 10 + 'px')
-    .style('top', y + 10 + 'px');
+    .style('left', x + 'px')
+    .style('top', y + 'px');
 };
 
 Tooltip.prototype.mouseleave = function (d) {
   this.tooltip.style('opacity', 0)
-    .style('left', '0px')
+    .style('left', '-256px')
     .style('top', '0px');
 
   d3.select(this.circles[d.index])
@@ -40,35 +61,13 @@ Tooltip.prototype.mouseleave = function (d) {
 
 Tooltip.prototype.initialize = function() {
   this.circles = d3.selectAll('circle').nodes();
-  var data = [
-    [//iPhone
-      { axis: "Battery Life", value: 0.22 },
-      { axis: "Brand", value: 0.28 },
-      { axis: "Contract Cost", value: 0.29 },
-      { axis: "Design And Quality", value: 0.17 },
-      { axis: "Have Internet Connectivity", value: 0.22 },
-      { axis: "Large Screen", value: 0.02 },
-      { axis: "Price Of Device", value: 0.21 },
-      { axis: "To Be A Smartphone", value: 0.50 }
-    ], [//Samsung
-      { axis: "Battery Life", value: 0.27 },
-      { axis: "Brand", value: 0.16 },
-      { axis: "Contract Cost", value: 0.35 },
-      { axis: "Design And Quality", value: 0.13 },
-      { axis: "Have Internet Connectivity", value: 0.20 },
-      { axis: "Large Screen", value: 0.13 },
-      { axis: "Price Of Device", value: 0.35 },
-      { axis: "To Be A Smartphone", value: 0.38 }
-    ], [//Nokia Smartphone
-      { axis: "Battery Life", value: 0.26 },
-      { axis: "Brand", value: 0.10 },
-      { axis: "Contract Cost", value: 0.30 },
-      { axis: "Design And Quality", value: 0.14 },
-      { axis: "Have Internet Connectivity", value: 0.22 },
-      { axis: "Large Screen", value: 0.04 },
-      { axis: "Price Of Device", value: 0.41 },
-      { axis: "To Be A Smartphone", value: 0.30 }
-    ]
+  var dummyData = [
+      { axis: "HP", value: 0 },
+      { axis: "Atk", value: 0 },
+      { axis: "Def", value: 0 },
+      { axis: "SpAtk", value: 0 },
+      { axis: "SpDef", value: 0 },
+      { axis: "Spd", value: 0 }
   ];
 
   this.tooltip = d3.select('#tooltip')
@@ -85,12 +84,15 @@ Tooltip.prototype.initialize = function() {
   this.tooltip.append("div")
     .attr('class', 'tooltip-title');
   this.tooltip.append('div')
-    .attr('class', 'tooltip-type');
+    .attr('class', 'tooltip-types');
   
   //Call function to draw the Radar chart
-  RadarChart('#tooltip', data);
+  RadarChart('#tooltip', [dummyData]);
 };
 
 Tooltip.prototype.updateInfo = function (d) {
   d3.select(".tooltip-image").attr('src', d.sprite);
+  d3.select(".tooltip-title").html(d.name);
+  d3.select(".tooltip-types").html(Object.values(d.types).join(', '));
+  RadarChart('#tooltip', [d.stats]);
 };

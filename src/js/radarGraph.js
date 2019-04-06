@@ -7,9 +7,9 @@
 
 function RadarChart(id, data, options) {
   var cfg = {
-    w: 100,				//Width of the circle
-    h: 100,				//Height of the circle
-    margin: { top: 20, right: 20, bottom: 20, left: 20 }, //The margins of the SVG
+    w: 200,				//Width of the circle
+    h: 200,				//Height of the circle
+    margin: { top: 30, right: 35, bottom: 30, left: 30 }, //The margins of the SVG
     levels: 5,				//How many levels or inner circles should there be drawn
     maxValue: 255, 			//What is the value that the biggest circle will represent
     labelFactor: 1.25, 	//How much farther than the radius of the outer circle should the labels be placed
@@ -33,13 +33,12 @@ function RadarChart(id, data, options) {
   var allAxis = (data[0].map(function (i, j) { return i.axis })),	//Names of each axis
     total = allAxis.length,					//The number of different axes
     radius = Math.min(cfg.w / 2, cfg.h / 2), 	//Radius of the outermost circle
-    Format = d3.format('%'),			 	//Percentage formatting
     angleSlice = Math.PI * 2 / total;		//The width in radians of each "slice"
 
   //Scale for the radius
   var rScale = d3.scaleLinear()
     .range([0, radius])
-    .domain([0, maxValue]);
+    .domain([0, cfg.maxValue]);
 
   /////////////////////////////////////////////////////////
   //////////// Create the container SVG and g /////////////
@@ -52,7 +51,8 @@ function RadarChart(id, data, options) {
   var svg = d3.select(id).append("svg")
     .attr("width", cfg.w + cfg.margin.left + cfg.margin.right)
     .attr("height", cfg.h + cfg.margin.top + cfg.margin.bottom)
-    .attr("class", "radar" + id);
+    .attr("class", "radar")
+    .style("font-family", "sans-serif");
   //Append a g element		
   var g = svg.append("g")
     .attr("transform", "translate(" + (cfg.w / 2 + cfg.margin.left) + "," + (cfg.h / 2 + cfg.margin.top) + ")");
@@ -97,7 +97,7 @@ function RadarChart(id, data, options) {
     .attr("dy", "0.4em")
     .style("font-size", "10px")
     .attr("fill", "#737373")
-    .text(function (d, i) { return Format(maxValue * d / cfg.levels); });
+    .text(function (d, i) { return cfg.maxValue * d / cfg.levels; });
 
   /////////////////////////////////////////////////////////
   //////////////////// Draw the axes //////////////////////
@@ -113,8 +113,8 @@ function RadarChart(id, data, options) {
   axis.append("line")
     .attr("x1", 0)
     .attr("y1", 0)
-    .attr("x2", function (d, i) { return rScale(maxValue * 1.1) * Math.cos(angleSlice * i - Math.PI / 2); })
-    .attr("y2", function (d, i) { return rScale(maxValue * 1.1) * Math.sin(angleSlice * i - Math.PI / 2); })
+    .attr("x2", function (d, i) { return rScale(cfg.maxValue * 1.1) * Math.cos(angleSlice * i - Math.PI / 2); })
+    .attr("y2", function (d, i) { return rScale(cfg.maxValue * 1.1) * Math.sin(angleSlice * i - Math.PI / 2); })
     .attr("class", "line")
     .style("stroke", "white")
     .style("stroke-width", "2px");
@@ -125,8 +125,8 @@ function RadarChart(id, data, options) {
     .style("font-size", "11px")
     .attr("text-anchor", "middle")
     .attr("dy", "0.35em")
-    .attr("x", function (d, i) { return rScale(maxValue * cfg.labelFactor) * Math.cos(angleSlice * i - Math.PI / 2); })
-    .attr("y", function (d, i) { return rScale(maxValue * cfg.labelFactor) * Math.sin(angleSlice * i - Math.PI / 2); })
+    .attr("x", function (d, i) { return rScale(cfg.maxValue * cfg.labelFactor) * Math.cos(angleSlice * i - Math.PI / 2); })
+    .attr("y", function (d, i) { return rScale(cfg.maxValue * cfg.labelFactor) * Math.sin(angleSlice * i - Math.PI / 2); })
     .text(function (d) { return d })
     .call(wrap, cfg.wrapWidth);
 

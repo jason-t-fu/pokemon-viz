@@ -70,11 +70,11 @@ function loadContent(data) {
 
   simulation.on('tick', () => {
 
-    typeCircle.attr('cx', d => d.x = Math.max(d.radius, Math.min(WIDTH - d.radius, d.x)))
-      .attr('cy', d => d.y = Math.max(d.radius, Math.min(HEIGHT - d.radius, d.y)));
+    typeCircle.attr('cx', d => d.x = Math.max(d.radius + 2, Math.min(WIDTH - d.radius - 2, d.x)))
+      .attr('cy', d => d.y = Math.max(d.radius + 2, Math.min(HEIGHT - d.radius - 2, d.y)));
 
-    pokemonCircle.attr('cx', d => d.x = Math.max(d.radius, Math.min(WIDTH - d.radius, d.x)))
-      .attr('cy', d => d.y = Math.max(d.radius, Math.min(HEIGHT - d.radius, d.y)));
+    pokemonCircle.attr('cx', d => d.x = Math.max(d.radius + 2, Math.min(WIDTH - d.radius - 2, d.x)))
+      .attr('cy', d => d.y = Math.max(d.radius + 2, Math.min(HEIGHT - d.radius - 2, d.y)));
 
     nodeText.attr('x', d => d.x = Math.max(d.radius, Math.min(WIDTH - d.radius, d.x)))
       .attr('y', d => d.y = Math.max(d.radius, Math.min(HEIGHT - d.radius, d.y)));

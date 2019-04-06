@@ -6,14 +6,32 @@
       "1": "grass",
       "2": "poison"
     },
-    "stats": {
-      "speed": 45,
-      "special-defense": 65,
-      "special-attack": 65,
-      "defense": 49,
-      "attack": 49,
-      "hp": 45
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 45
+      },
+      {
+        "axis": "SpDef",
+        "value": 65
+      },
+      {
+        "axis": "SpAtk",
+        "value": 65
+      },
+      {
+        "axis": "Def",
+        "value": 49
+      },
+      {
+        "axis": "Atk",
+        "value": 49
+      },
+      {
+        "axis": "HP",
+        "value": 45
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
   },
   "ivysaur": {
@@ -23,14 +41,32 @@
       "1": "grass",
       "2": "poison"
     },
-    "stats": {
-      "speed": 60,
-      "special-defense": 80,
-      "special-attack": 80,
-      "defense": 63,
-      "attack": 62,
-      "hp": 60
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 60
+      },
+      {
+        "axis": "SpDef",
+        "value": 80
+      },
+      {
+        "axis": "SpAtk",
+        "value": 80
+      },
+      {
+        "axis": "Def",
+        "value": 63
+      },
+      {
+        "axis": "Atk",
+        "value": 62
+      },
+      {
+        "axis": "HP",
+        "value": 60
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"
   },
   "venusaur": {
@@ -40,14 +76,32 @@
       "1": "grass",
       "2": "poison"
     },
-    "stats": {
-      "speed": 80,
-      "special-defense": 100,
-      "special-attack": 100,
-      "defense": 83,
-      "attack": 82,
-      "hp": 80
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 80
+      },
+      {
+        "axis": "SpDef",
+        "value": 100
+      },
+      {
+        "axis": "SpAtk",
+        "value": 100
+      },
+      {
+        "axis": "Def",
+        "value": 83
+      },
+      {
+        "axis": "Atk",
+        "value": 82
+      },
+      {
+        "axis": "HP",
+        "value": 80
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
   },
   "charmander": {
@@ -56,14 +110,32 @@
     "types": {
       "1": "fire"
     },
-    "stats": {
-      "speed": 65,
-      "special-defense": 50,
-      "special-attack": 60,
-      "defense": 43,
-      "attack": 52,
-      "hp": 39
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 65
+      },
+      {
+        "axis": "SpDef",
+        "value": 50
+      },
+      {
+        "axis": "SpAtk",
+        "value": 60
+      },
+      {
+        "axis": "Def",
+        "value": 43
+      },
+      {
+        "axis": "Atk",
+        "value": 52
+      },
+      {
+        "axis": "HP",
+        "value": 39
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
   },
   "charmeleon": {
@@ -72,14 +144,32 @@
     "types": {
       "1": "fire"
     },
-    "stats": {
-      "speed": 80,
-      "special-defense": 65,
-      "special-attack": 80,
-      "defense": 58,
-      "attack": 64,
-      "hp": 58
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 80
+      },
+      {
+        "axis": "SpDef",
+        "value": 65
+      },
+      {
+        "axis": "SpAtk",
+        "value": 80
+      },
+      {
+        "axis": "Def",
+        "value": 58
+      },
+      {
+        "axis": "Atk",
+        "value": 64
+      },
+      {
+        "axis": "HP",
+        "value": 58
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png"
   },
   "charizard": {
@@ -89,14 +179,32 @@
       "1": "fire",
       "2": "flying"
     },
-    "stats": {
-      "speed": 100,
-      "special-defense": 85,
-      "special-attack": 109,
-      "defense": 78,
-      "attack": 84,
-      "hp": 78
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 100
+      },
+      {
+        "axis": "SpDef",
+        "value": 85
+      },
+      {
+        "axis": "SpAtk",
+        "value": 109
+      },
+      {
+        "axis": "Def",
+        "value": 78
+      },
+      {
+        "axis": "Atk",
+        "value": 84
+      },
+      {
+        "axis": "HP",
+        "value": 78
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"
   },
   "squirtle": {
@@ -105,14 +213,32 @@
     "types": {
       "1": "water"
     },
-    "stats": {
-      "speed": 43,
-      "special-defense": 64,
-      "special-attack": 50,
-      "defense": 65,
-      "attack": 48,
-      "hp": 44
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 43
+      },
+      {
+        "axis": "SpDef",
+        "value": 64
+      },
+      {
+        "axis": "SpAtk",
+        "value": 50
+      },
+      {
+        "axis": "Def",
+        "value": 65
+      },
+      {
+        "axis": "Atk",
+        "value": 48
+      },
+      {
+        "axis": "HP",
+        "value": 44
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
   },
   "wartortle": {
@@ -121,14 +247,32 @@
     "types": {
       "1": "water"
     },
-    "stats": {
-      "speed": 58,
-      "special-defense": 80,
-      "special-attack": 65,
-      "defense": 80,
-      "attack": 63,
-      "hp": 59
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 58
+      },
+      {
+        "axis": "SpDef",
+        "value": 80
+      },
+      {
+        "axis": "SpAtk",
+        "value": 65
+      },
+      {
+        "axis": "Def",
+        "value": 80
+      },
+      {
+        "axis": "Atk",
+        "value": 63
+      },
+      {
+        "axis": "HP",
+        "value": 59
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"
   },
   "blastoise": {
@@ -137,14 +281,32 @@
     "types": {
       "1": "water"
     },
-    "stats": {
-      "speed": 78,
-      "special-defense": 105,
-      "special-attack": 85,
-      "defense": 100,
-      "attack": 83,
-      "hp": 79
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 78
+      },
+      {
+        "axis": "SpDef",
+        "value": 105
+      },
+      {
+        "axis": "SpAtk",
+        "value": 85
+      },
+      {
+        "axis": "Def",
+        "value": 100
+      },
+      {
+        "axis": "Atk",
+        "value": 83
+      },
+      {
+        "axis": "HP",
+        "value": 79
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"
   },
   "caterpie": {
@@ -153,14 +315,32 @@
     "types": {
       "1": "bug"
     },
-    "stats": {
-      "speed": 45,
-      "special-defense": 20,
-      "special-attack": 20,
-      "defense": 35,
-      "attack": 30,
-      "hp": 45
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 45
+      },
+      {
+        "axis": "SpDef",
+        "value": 20
+      },
+      {
+        "axis": "SpAtk",
+        "value": 20
+      },
+      {
+        "axis": "Def",
+        "value": 35
+      },
+      {
+        "axis": "Atk",
+        "value": 30
+      },
+      {
+        "axis": "HP",
+        "value": 45
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png"
   },
   "metapod": {
@@ -169,14 +349,32 @@
     "types": {
       "1": "bug"
     },
-    "stats": {
-      "speed": 30,
-      "special-defense": 25,
-      "special-attack": 25,
-      "defense": 55,
-      "attack": 20,
-      "hp": 50
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 30
+      },
+      {
+        "axis": "SpDef",
+        "value": 25
+      },
+      {
+        "axis": "SpAtk",
+        "value": 25
+      },
+      {
+        "axis": "Def",
+        "value": 55
+      },
+      {
+        "axis": "Atk",
+        "value": 20
+      },
+      {
+        "axis": "HP",
+        "value": 50
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png"
   },
   "butterfree": {
@@ -186,14 +384,32 @@
       "1": "bug",
       "2": "flying"
     },
-    "stats": {
-      "speed": 70,
-      "special-defense": 80,
-      "special-attack": 90,
-      "defense": 50,
-      "attack": 45,
-      "hp": 60
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 70
+      },
+      {
+        "axis": "SpDef",
+        "value": 80
+      },
+      {
+        "axis": "SpAtk",
+        "value": 90
+      },
+      {
+        "axis": "Def",
+        "value": 50
+      },
+      {
+        "axis": "Atk",
+        "value": 45
+      },
+      {
+        "axis": "HP",
+        "value": 60
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png"
   },
   "weedle": {
@@ -203,14 +419,32 @@
       "1": "bug",
       "2": "poison"
     },
-    "stats": {
-      "speed": 50,
-      "special-defense": 20,
-      "special-attack": 20,
-      "defense": 30,
-      "attack": 35,
-      "hp": 40
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 50
+      },
+      {
+        "axis": "SpDef",
+        "value": 20
+      },
+      {
+        "axis": "SpAtk",
+        "value": 20
+      },
+      {
+        "axis": "Def",
+        "value": 30
+      },
+      {
+        "axis": "Atk",
+        "value": 35
+      },
+      {
+        "axis": "HP",
+        "value": 40
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png"
   },
   "kakuna": {
@@ -220,14 +454,32 @@
       "1": "bug",
       "2": "poison"
     },
-    "stats": {
-      "speed": 35,
-      "special-defense": 25,
-      "special-attack": 25,
-      "defense": 50,
-      "attack": 25,
-      "hp": 45
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 35
+      },
+      {
+        "axis": "SpDef",
+        "value": 25
+      },
+      {
+        "axis": "SpAtk",
+        "value": 25
+      },
+      {
+        "axis": "Def",
+        "value": 50
+      },
+      {
+        "axis": "Atk",
+        "value": 25
+      },
+      {
+        "axis": "HP",
+        "value": 45
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png"
   },
   "beedrill": {
@@ -237,14 +489,32 @@
       "1": "bug",
       "2": "poison"
     },
-    "stats": {
-      "speed": 75,
-      "special-defense": 80,
-      "special-attack": 45,
-      "defense": 40,
-      "attack": 90,
-      "hp": 65
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 75
+      },
+      {
+        "axis": "SpDef",
+        "value": 80
+      },
+      {
+        "axis": "SpAtk",
+        "value": 45
+      },
+      {
+        "axis": "Def",
+        "value": 40
+      },
+      {
+        "axis": "Atk",
+        "value": 90
+      },
+      {
+        "axis": "HP",
+        "value": 65
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png"
   },
   "pidgey": {
@@ -254,14 +524,32 @@
       "1": "normal",
       "2": "flying"
     },
-    "stats": {
-      "speed": 56,
-      "special-defense": 35,
-      "special-attack": 35,
-      "defense": 40,
-      "attack": 45,
-      "hp": 40
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 56
+      },
+      {
+        "axis": "SpDef",
+        "value": 35
+      },
+      {
+        "axis": "SpAtk",
+        "value": 35
+      },
+      {
+        "axis": "Def",
+        "value": 40
+      },
+      {
+        "axis": "Atk",
+        "value": 45
+      },
+      {
+        "axis": "HP",
+        "value": 40
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png"
   },
   "pidgeotto": {
@@ -271,14 +559,32 @@
       "1": "normal",
       "2": "flying"
     },
-    "stats": {
-      "speed": 71,
-      "special-defense": 50,
-      "special-attack": 50,
-      "defense": 55,
-      "attack": 60,
-      "hp": 63
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 71
+      },
+      {
+        "axis": "SpDef",
+        "value": 50
+      },
+      {
+        "axis": "SpAtk",
+        "value": 50
+      },
+      {
+        "axis": "Def",
+        "value": 55
+      },
+      {
+        "axis": "Atk",
+        "value": 60
+      },
+      {
+        "axis": "HP",
+        "value": 63
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png"
   },
   "pidgeot": {
@@ -288,14 +594,32 @@
       "1": "normal",
       "2": "flying"
     },
-    "stats": {
-      "speed": 101,
-      "special-defense": 70,
-      "special-attack": 70,
-      "defense": 75,
-      "attack": 80,
-      "hp": 83
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 101
+      },
+      {
+        "axis": "SpDef",
+        "value": 70
+      },
+      {
+        "axis": "SpAtk",
+        "value": 70
+      },
+      {
+        "axis": "Def",
+        "value": 75
+      },
+      {
+        "axis": "Atk",
+        "value": 80
+      },
+      {
+        "axis": "HP",
+        "value": 83
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png"
   },
   "rattata": {
@@ -304,14 +628,32 @@
     "types": {
       "1": "normal"
     },
-    "stats": {
-      "speed": 72,
-      "special-defense": 35,
-      "special-attack": 25,
-      "defense": 35,
-      "attack": 56,
-      "hp": 30
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 72
+      },
+      {
+        "axis": "SpDef",
+        "value": 35
+      },
+      {
+        "axis": "SpAtk",
+        "value": 25
+      },
+      {
+        "axis": "Def",
+        "value": 35
+      },
+      {
+        "axis": "Atk",
+        "value": 56
+      },
+      {
+        "axis": "HP",
+        "value": 30
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png"
   },
   "raticate": {
@@ -320,14 +662,32 @@
     "types": {
       "1": "normal"
     },
-    "stats": {
-      "speed": 97,
-      "special-defense": 70,
-      "special-attack": 50,
-      "defense": 60,
-      "attack": 81,
-      "hp": 55
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 97
+      },
+      {
+        "axis": "SpDef",
+        "value": 70
+      },
+      {
+        "axis": "SpAtk",
+        "value": 50
+      },
+      {
+        "axis": "Def",
+        "value": 60
+      },
+      {
+        "axis": "Atk",
+        "value": 81
+      },
+      {
+        "axis": "HP",
+        "value": 55
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png"
   },
   "spearow": {
@@ -337,14 +697,32 @@
       "1": "normal",
       "2": "flying"
     },
-    "stats": {
-      "speed": 70,
-      "special-defense": 31,
-      "special-attack": 31,
-      "defense": 30,
-      "attack": 60,
-      "hp": 40
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 70
+      },
+      {
+        "axis": "SpDef",
+        "value": 31
+      },
+      {
+        "axis": "SpAtk",
+        "value": 31
+      },
+      {
+        "axis": "Def",
+        "value": 30
+      },
+      {
+        "axis": "Atk",
+        "value": 60
+      },
+      {
+        "axis": "HP",
+        "value": 40
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png"
   },
   "fearow": {
@@ -354,14 +732,32 @@
       "1": "normal",
       "2": "flying"
     },
-    "stats": {
-      "speed": 100,
-      "special-defense": 61,
-      "special-attack": 61,
-      "defense": 65,
-      "attack": 90,
-      "hp": 65
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 100
+      },
+      {
+        "axis": "SpDef",
+        "value": 61
+      },
+      {
+        "axis": "SpAtk",
+        "value": 61
+      },
+      {
+        "axis": "Def",
+        "value": 65
+      },
+      {
+        "axis": "Atk",
+        "value": 90
+      },
+      {
+        "axis": "HP",
+        "value": 65
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png"
   },
   "ekans": {
@@ -370,14 +766,32 @@
     "types": {
       "1": "poison"
     },
-    "stats": {
-      "speed": 55,
-      "special-defense": 54,
-      "special-attack": 40,
-      "defense": 44,
-      "attack": 60,
-      "hp": 35
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 55
+      },
+      {
+        "axis": "SpDef",
+        "value": 54
+      },
+      {
+        "axis": "SpAtk",
+        "value": 40
+      },
+      {
+        "axis": "Def",
+        "value": 44
+      },
+      {
+        "axis": "Atk",
+        "value": 60
+      },
+      {
+        "axis": "HP",
+        "value": 35
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png"
   },
   "arbok": {
@@ -386,14 +800,32 @@
     "types": {
       "1": "poison"
     },
-    "stats": {
-      "speed": 80,
-      "special-defense": 79,
-      "special-attack": 65,
-      "defense": 69,
-      "attack": 95,
-      "hp": 60
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 80
+      },
+      {
+        "axis": "SpDef",
+        "value": 79
+      },
+      {
+        "axis": "SpAtk",
+        "value": 65
+      },
+      {
+        "axis": "Def",
+        "value": 69
+      },
+      {
+        "axis": "Atk",
+        "value": 95
+      },
+      {
+        "axis": "HP",
+        "value": 60
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png"
   },
   "pikachu": {
@@ -402,14 +834,32 @@
     "types": {
       "1": "electric"
     },
-    "stats": {
-      "speed": 90,
-      "special-defense": 50,
-      "special-attack": 50,
-      "defense": 40,
-      "attack": 55,
-      "hp": 35
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 90
+      },
+      {
+        "axis": "SpDef",
+        "value": 50
+      },
+      {
+        "axis": "SpAtk",
+        "value": 50
+      },
+      {
+        "axis": "Def",
+        "value": 40
+      },
+      {
+        "axis": "Atk",
+        "value": 55
+      },
+      {
+        "axis": "HP",
+        "value": 35
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
   },
   "raichu": {
@@ -418,14 +868,32 @@
     "types": {
       "1": "electric"
     },
-    "stats": {
-      "speed": 110,
-      "special-defense": 80,
-      "special-attack": 90,
-      "defense": 55,
-      "attack": 90,
-      "hp": 60
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 110
+      },
+      {
+        "axis": "SpDef",
+        "value": 80
+      },
+      {
+        "axis": "SpAtk",
+        "value": 90
+      },
+      {
+        "axis": "Def",
+        "value": 55
+      },
+      {
+        "axis": "Atk",
+        "value": 90
+      },
+      {
+        "axis": "HP",
+        "value": 60
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png"
   },
   "sandshrew": {
@@ -434,14 +902,32 @@
     "types": {
       "1": "ground"
     },
-    "stats": {
-      "speed": 40,
-      "special-defense": 30,
-      "special-attack": 20,
-      "defense": 85,
-      "attack": 75,
-      "hp": 50
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 40
+      },
+      {
+        "axis": "SpDef",
+        "value": 30
+      },
+      {
+        "axis": "SpAtk",
+        "value": 20
+      },
+      {
+        "axis": "Def",
+        "value": 85
+      },
+      {
+        "axis": "Atk",
+        "value": 75
+      },
+      {
+        "axis": "HP",
+        "value": 50
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png"
   },
   "sandslash": {
@@ -450,14 +936,32 @@
     "types": {
       "1": "ground"
     },
-    "stats": {
-      "speed": 65,
-      "special-defense": 55,
-      "special-attack": 45,
-      "defense": 110,
-      "attack": 100,
-      "hp": 75
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 65
+      },
+      {
+        "axis": "SpDef",
+        "value": 55
+      },
+      {
+        "axis": "SpAtk",
+        "value": 45
+      },
+      {
+        "axis": "Def",
+        "value": 110
+      },
+      {
+        "axis": "Atk",
+        "value": 100
+      },
+      {
+        "axis": "HP",
+        "value": 75
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png"
   },
   "nidoran-f": {
@@ -466,14 +970,32 @@
     "types": {
       "1": "poison"
     },
-    "stats": {
-      "speed": 41,
-      "special-defense": 40,
-      "special-attack": 40,
-      "defense": 52,
-      "attack": 47,
-      "hp": 55
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 41
+      },
+      {
+        "axis": "SpDef",
+        "value": 40
+      },
+      {
+        "axis": "SpAtk",
+        "value": 40
+      },
+      {
+        "axis": "Def",
+        "value": 52
+      },
+      {
+        "axis": "Atk",
+        "value": 47
+      },
+      {
+        "axis": "HP",
+        "value": 55
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png"
   },
   "nidorina": {
@@ -482,14 +1004,32 @@
     "types": {
       "1": "poison"
     },
-    "stats": {
-      "speed": 56,
-      "special-defense": 55,
-      "special-attack": 55,
-      "defense": 67,
-      "attack": 62,
-      "hp": 70
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 56
+      },
+      {
+        "axis": "SpDef",
+        "value": 55
+      },
+      {
+        "axis": "SpAtk",
+        "value": 55
+      },
+      {
+        "axis": "Def",
+        "value": 67
+      },
+      {
+        "axis": "Atk",
+        "value": 62
+      },
+      {
+        "axis": "HP",
+        "value": 70
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png"
   },
   "nidoqueen": {
@@ -499,14 +1039,32 @@
       "1": "poison",
       "2": "ground"
     },
-    "stats": {
-      "speed": 76,
-      "special-defense": 85,
-      "special-attack": 75,
-      "defense": 87,
-      "attack": 92,
-      "hp": 90
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 76
+      },
+      {
+        "axis": "SpDef",
+        "value": 85
+      },
+      {
+        "axis": "SpAtk",
+        "value": 75
+      },
+      {
+        "axis": "Def",
+        "value": 87
+      },
+      {
+        "axis": "Atk",
+        "value": 92
+      },
+      {
+        "axis": "HP",
+        "value": 90
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png"
   },
   "nidoran-m": {
@@ -515,14 +1073,32 @@
     "types": {
       "1": "poison"
     },
-    "stats": {
-      "speed": 50,
-      "special-defense": 40,
-      "special-attack": 40,
-      "defense": 40,
-      "attack": 57,
-      "hp": 46
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 50
+      },
+      {
+        "axis": "SpDef",
+        "value": 40
+      },
+      {
+        "axis": "SpAtk",
+        "value": 40
+      },
+      {
+        "axis": "Def",
+        "value": 40
+      },
+      {
+        "axis": "Atk",
+        "value": 57
+      },
+      {
+        "axis": "HP",
+        "value": 46
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png"
   },
   "nidorino": {
@@ -531,14 +1107,32 @@
     "types": {
       "1": "poison"
     },
-    "stats": {
-      "speed": 65,
-      "special-defense": 55,
-      "special-attack": 55,
-      "defense": 57,
-      "attack": 72,
-      "hp": 61
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 65
+      },
+      {
+        "axis": "SpDef",
+        "value": 55
+      },
+      {
+        "axis": "SpAtk",
+        "value": 55
+      },
+      {
+        "axis": "Def",
+        "value": 57
+      },
+      {
+        "axis": "Atk",
+        "value": 72
+      },
+      {
+        "axis": "HP",
+        "value": 61
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png"
   },
   "nidoking": {
@@ -548,14 +1142,32 @@
       "1": "poison",
       "2": "ground"
     },
-    "stats": {
-      "speed": 85,
-      "special-defense": 75,
-      "special-attack": 85,
-      "defense": 77,
-      "attack": 102,
-      "hp": 81
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 85
+      },
+      {
+        "axis": "SpDef",
+        "value": 75
+      },
+      {
+        "axis": "SpAtk",
+        "value": 85
+      },
+      {
+        "axis": "Def",
+        "value": 77
+      },
+      {
+        "axis": "Atk",
+        "value": 102
+      },
+      {
+        "axis": "HP",
+        "value": 81
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png"
   },
   "clefairy": {
@@ -564,14 +1176,32 @@
     "types": {
       "1": "normal"
     },
-    "stats": {
-      "speed": 35,
-      "special-defense": 65,
-      "special-attack": 60,
-      "defense": 48,
-      "attack": 45,
-      "hp": 70
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 35
+      },
+      {
+        "axis": "SpDef",
+        "value": 65
+      },
+      {
+        "axis": "SpAtk",
+        "value": 60
+      },
+      {
+        "axis": "Def",
+        "value": 48
+      },
+      {
+        "axis": "Atk",
+        "value": 45
+      },
+      {
+        "axis": "HP",
+        "value": 70
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png"
   },
   "clefable": {
@@ -580,14 +1210,32 @@
     "types": {
       "1": "normal"
     },
-    "stats": {
-      "speed": 60,
-      "special-defense": 90,
-      "special-attack": 95,
-      "defense": 73,
-      "attack": 70,
-      "hp": 95
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 60
+      },
+      {
+        "axis": "SpDef",
+        "value": 90
+      },
+      {
+        "axis": "SpAtk",
+        "value": 95
+      },
+      {
+        "axis": "Def",
+        "value": 73
+      },
+      {
+        "axis": "Atk",
+        "value": 70
+      },
+      {
+        "axis": "HP",
+        "value": 95
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png"
   },
   "vulpix": {
@@ -596,14 +1244,32 @@
     "types": {
       "1": "fire"
     },
-    "stats": {
-      "speed": 65,
-      "special-defense": 65,
-      "special-attack": 50,
-      "defense": 40,
-      "attack": 41,
-      "hp": 38
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 65
+      },
+      {
+        "axis": "SpDef",
+        "value": 65
+      },
+      {
+        "axis": "SpAtk",
+        "value": 50
+      },
+      {
+        "axis": "Def",
+        "value": 40
+      },
+      {
+        "axis": "Atk",
+        "value": 41
+      },
+      {
+        "axis": "HP",
+        "value": 38
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png"
   },
   "ninetales": {
@@ -612,14 +1278,32 @@
     "types": {
       "1": "fire"
     },
-    "stats": {
-      "speed": 100,
-      "special-defense": 100,
-      "special-attack": 81,
-      "defense": 75,
-      "attack": 76,
-      "hp": 73
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 100
+      },
+      {
+        "axis": "SpDef",
+        "value": 100
+      },
+      {
+        "axis": "SpAtk",
+        "value": 81
+      },
+      {
+        "axis": "Def",
+        "value": 75
+      },
+      {
+        "axis": "Atk",
+        "value": 76
+      },
+      {
+        "axis": "HP",
+        "value": 73
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png"
   },
   "jigglypuff": {
@@ -628,14 +1312,32 @@
     "types": {
       "1": "normal"
     },
-    "stats": {
-      "speed": 20,
-      "special-defense": 25,
-      "special-attack": 45,
-      "defense": 20,
-      "attack": 45,
-      "hp": 115
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 20
+      },
+      {
+        "axis": "SpDef",
+        "value": 25
+      },
+      {
+        "axis": "SpAtk",
+        "value": 45
+      },
+      {
+        "axis": "Def",
+        "value": 20
+      },
+      {
+        "axis": "Atk",
+        "value": 45
+      },
+      {
+        "axis": "HP",
+        "value": 115
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png"
   },
   "wigglytuff": {
@@ -644,14 +1346,32 @@
     "types": {
       "1": "normal"
     },
-    "stats": {
-      "speed": 45,
-      "special-defense": 50,
-      "special-attack": 85,
-      "defense": 45,
-      "attack": 70,
-      "hp": 140
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 45
+      },
+      {
+        "axis": "SpDef",
+        "value": 50
+      },
+      {
+        "axis": "SpAtk",
+        "value": 85
+      },
+      {
+        "axis": "Def",
+        "value": 45
+      },
+      {
+        "axis": "Atk",
+        "value": 70
+      },
+      {
+        "axis": "HP",
+        "value": 140
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png"
   },
   "zubat": {
@@ -661,14 +1381,32 @@
       "1": "poison",
       "2": "flying"
     },
-    "stats": {
-      "speed": 55,
-      "special-defense": 40,
-      "special-attack": 30,
-      "defense": 35,
-      "attack": 45,
-      "hp": 40
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 55
+      },
+      {
+        "axis": "SpDef",
+        "value": 40
+      },
+      {
+        "axis": "SpAtk",
+        "value": 30
+      },
+      {
+        "axis": "Def",
+        "value": 35
+      },
+      {
+        "axis": "Atk",
+        "value": 45
+      },
+      {
+        "axis": "HP",
+        "value": 40
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png"
   },
   "golbat": {
@@ -678,14 +1416,32 @@
       "1": "poison",
       "2": "flying"
     },
-    "stats": {
-      "speed": 90,
-      "special-defense": 75,
-      "special-attack": 65,
-      "defense": 70,
-      "attack": 80,
-      "hp": 75
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 90
+      },
+      {
+        "axis": "SpDef",
+        "value": 75
+      },
+      {
+        "axis": "SpAtk",
+        "value": 65
+      },
+      {
+        "axis": "Def",
+        "value": 70
+      },
+      {
+        "axis": "Atk",
+        "value": 80
+      },
+      {
+        "axis": "HP",
+        "value": 75
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png"
   },
   "oddish": {
@@ -695,14 +1451,32 @@
       "1": "grass",
       "2": "poison"
     },
-    "stats": {
-      "speed": 30,
-      "special-defense": 65,
-      "special-attack": 75,
-      "defense": 55,
-      "attack": 50,
-      "hp": 45
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 30
+      },
+      {
+        "axis": "SpDef",
+        "value": 65
+      },
+      {
+        "axis": "SpAtk",
+        "value": 75
+      },
+      {
+        "axis": "Def",
+        "value": 55
+      },
+      {
+        "axis": "Atk",
+        "value": 50
+      },
+      {
+        "axis": "HP",
+        "value": 45
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png"
   },
   "gloom": {
@@ -712,14 +1486,32 @@
       "1": "grass",
       "2": "poison"
     },
-    "stats": {
-      "speed": 40,
-      "special-defense": 75,
-      "special-attack": 85,
-      "defense": 70,
-      "attack": 65,
-      "hp": 60
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 40
+      },
+      {
+        "axis": "SpDef",
+        "value": 75
+      },
+      {
+        "axis": "SpAtk",
+        "value": 85
+      },
+      {
+        "axis": "Def",
+        "value": 70
+      },
+      {
+        "axis": "Atk",
+        "value": 65
+      },
+      {
+        "axis": "HP",
+        "value": 60
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png"
   },
   "vileplume": {
@@ -729,14 +1521,32 @@
       "1": "grass",
       "2": "poison"
     },
-    "stats": {
-      "speed": 50,
-      "special-defense": 90,
-      "special-attack": 110,
-      "defense": 85,
-      "attack": 80,
-      "hp": 75
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 50
+      },
+      {
+        "axis": "SpDef",
+        "value": 90
+      },
+      {
+        "axis": "SpAtk",
+        "value": 110
+      },
+      {
+        "axis": "Def",
+        "value": 85
+      },
+      {
+        "axis": "Atk",
+        "value": 80
+      },
+      {
+        "axis": "HP",
+        "value": 75
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png"
   },
   "paras": {
@@ -746,14 +1556,32 @@
       "1": "bug",
       "2": "grass"
     },
-    "stats": {
-      "speed": 25,
-      "special-defense": 55,
-      "special-attack": 45,
-      "defense": 55,
-      "attack": 70,
-      "hp": 35
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 25
+      },
+      {
+        "axis": "SpDef",
+        "value": 55
+      },
+      {
+        "axis": "SpAtk",
+        "value": 45
+      },
+      {
+        "axis": "Def",
+        "value": 55
+      },
+      {
+        "axis": "Atk",
+        "value": 70
+      },
+      {
+        "axis": "HP",
+        "value": 35
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png"
   },
   "parasect": {
@@ -763,14 +1591,32 @@
       "1": "bug",
       "2": "grass"
     },
-    "stats": {
-      "speed": 30,
-      "special-defense": 80,
-      "special-attack": 60,
-      "defense": 80,
-      "attack": 95,
-      "hp": 60
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 30
+      },
+      {
+        "axis": "SpDef",
+        "value": 80
+      },
+      {
+        "axis": "SpAtk",
+        "value": 60
+      },
+      {
+        "axis": "Def",
+        "value": 80
+      },
+      {
+        "axis": "Atk",
+        "value": 95
+      },
+      {
+        "axis": "HP",
+        "value": 60
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png"
   },
   "venonat": {
@@ -780,14 +1626,32 @@
       "1": "bug",
       "2": "poison"
     },
-    "stats": {
-      "speed": 45,
-      "special-defense": 55,
-      "special-attack": 40,
-      "defense": 50,
-      "attack": 55,
-      "hp": 60
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 45
+      },
+      {
+        "axis": "SpDef",
+        "value": 55
+      },
+      {
+        "axis": "SpAtk",
+        "value": 40
+      },
+      {
+        "axis": "Def",
+        "value": 50
+      },
+      {
+        "axis": "Atk",
+        "value": 55
+      },
+      {
+        "axis": "HP",
+        "value": 60
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png"
   },
   "venomoth": {
@@ -797,14 +1661,32 @@
       "1": "bug",
       "2": "poison"
     },
-    "stats": {
-      "speed": 90,
-      "special-defense": 75,
-      "special-attack": 90,
-      "defense": 60,
-      "attack": 65,
-      "hp": 70
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 90
+      },
+      {
+        "axis": "SpDef",
+        "value": 75
+      },
+      {
+        "axis": "SpAtk",
+        "value": 90
+      },
+      {
+        "axis": "Def",
+        "value": 60
+      },
+      {
+        "axis": "Atk",
+        "value": 65
+      },
+      {
+        "axis": "HP",
+        "value": 70
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png"
   },
   "diglett": {
@@ -813,14 +1695,32 @@
     "types": {
       "1": "ground"
     },
-    "stats": {
-      "speed": 95,
-      "special-defense": 45,
-      "special-attack": 35,
-      "defense": 25,
-      "attack": 55,
-      "hp": 10
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 95
+      },
+      {
+        "axis": "SpDef",
+        "value": 45
+      },
+      {
+        "axis": "SpAtk",
+        "value": 35
+      },
+      {
+        "axis": "Def",
+        "value": 25
+      },
+      {
+        "axis": "Atk",
+        "value": 55
+      },
+      {
+        "axis": "HP",
+        "value": 10
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png"
   },
   "dugtrio": {
@@ -829,14 +1729,32 @@
     "types": {
       "1": "ground"
     },
-    "stats": {
-      "speed": 120,
-      "special-defense": 70,
-      "special-attack": 50,
-      "defense": 50,
-      "attack": 100,
-      "hp": 35
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 120
+      },
+      {
+        "axis": "SpDef",
+        "value": 70
+      },
+      {
+        "axis": "SpAtk",
+        "value": 50
+      },
+      {
+        "axis": "Def",
+        "value": 50
+      },
+      {
+        "axis": "Atk",
+        "value": 100
+      },
+      {
+        "axis": "HP",
+        "value": 35
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png"
   },
   "meowth": {
@@ -845,14 +1763,32 @@
     "types": {
       "1": "normal"
     },
-    "stats": {
-      "speed": 90,
-      "special-defense": 40,
-      "special-attack": 40,
-      "defense": 35,
-      "attack": 45,
-      "hp": 40
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 90
+      },
+      {
+        "axis": "SpDef",
+        "value": 40
+      },
+      {
+        "axis": "SpAtk",
+        "value": 40
+      },
+      {
+        "axis": "Def",
+        "value": 35
+      },
+      {
+        "axis": "Atk",
+        "value": 45
+      },
+      {
+        "axis": "HP",
+        "value": 40
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png"
   },
   "persian": {
@@ -861,14 +1797,32 @@
     "types": {
       "1": "normal"
     },
-    "stats": {
-      "speed": 115,
-      "special-defense": 65,
-      "special-attack": 65,
-      "defense": 60,
-      "attack": 70,
-      "hp": 65
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 115
+      },
+      {
+        "axis": "SpDef",
+        "value": 65
+      },
+      {
+        "axis": "SpAtk",
+        "value": 65
+      },
+      {
+        "axis": "Def",
+        "value": 60
+      },
+      {
+        "axis": "Atk",
+        "value": 70
+      },
+      {
+        "axis": "HP",
+        "value": 65
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png"
   },
   "psyduck": {
@@ -877,14 +1831,32 @@
     "types": {
       "1": "water"
     },
-    "stats": {
-      "speed": 55,
-      "special-defense": 50,
-      "special-attack": 65,
-      "defense": 48,
-      "attack": 52,
-      "hp": 50
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 55
+      },
+      {
+        "axis": "SpDef",
+        "value": 50
+      },
+      {
+        "axis": "SpAtk",
+        "value": 65
+      },
+      {
+        "axis": "Def",
+        "value": 48
+      },
+      {
+        "axis": "Atk",
+        "value": 52
+      },
+      {
+        "axis": "HP",
+        "value": 50
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png"
   },
   "golduck": {
@@ -893,14 +1865,32 @@
     "types": {
       "1": "water"
     },
-    "stats": {
-      "speed": 85,
-      "special-defense": 80,
-      "special-attack": 95,
-      "defense": 78,
-      "attack": 82,
-      "hp": 80
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 85
+      },
+      {
+        "axis": "SpDef",
+        "value": 80
+      },
+      {
+        "axis": "SpAtk",
+        "value": 95
+      },
+      {
+        "axis": "Def",
+        "value": 78
+      },
+      {
+        "axis": "Atk",
+        "value": 82
+      },
+      {
+        "axis": "HP",
+        "value": 80
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png"
   },
   "mankey": {
@@ -909,14 +1899,32 @@
     "types": {
       "1": "fighting"
     },
-    "stats": {
-      "speed": 70,
-      "special-defense": 45,
-      "special-attack": 35,
-      "defense": 35,
-      "attack": 80,
-      "hp": 40
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 70
+      },
+      {
+        "axis": "SpDef",
+        "value": 45
+      },
+      {
+        "axis": "SpAtk",
+        "value": 35
+      },
+      {
+        "axis": "Def",
+        "value": 35
+      },
+      {
+        "axis": "Atk",
+        "value": 80
+      },
+      {
+        "axis": "HP",
+        "value": 40
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png"
   },
   "primeape": {
@@ -925,14 +1933,32 @@
     "types": {
       "1": "fighting"
     },
-    "stats": {
-      "speed": 95,
-      "special-defense": 70,
-      "special-attack": 60,
-      "defense": 60,
-      "attack": 105,
-      "hp": 65
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 95
+      },
+      {
+        "axis": "SpDef",
+        "value": 70
+      },
+      {
+        "axis": "SpAtk",
+        "value": 60
+      },
+      {
+        "axis": "Def",
+        "value": 60
+      },
+      {
+        "axis": "Atk",
+        "value": 105
+      },
+      {
+        "axis": "HP",
+        "value": 65
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png"
   },
   "growlithe": {
@@ -941,14 +1967,32 @@
     "types": {
       "1": "fire"
     },
-    "stats": {
-      "speed": 60,
-      "special-defense": 50,
-      "special-attack": 70,
-      "defense": 45,
-      "attack": 70,
-      "hp": 55
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 60
+      },
+      {
+        "axis": "SpDef",
+        "value": 50
+      },
+      {
+        "axis": "SpAtk",
+        "value": 70
+      },
+      {
+        "axis": "Def",
+        "value": 45
+      },
+      {
+        "axis": "Atk",
+        "value": 70
+      },
+      {
+        "axis": "HP",
+        "value": 55
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png"
   },
   "arcanine": {
@@ -957,14 +2001,32 @@
     "types": {
       "1": "fire"
     },
-    "stats": {
-      "speed": 95,
-      "special-defense": 80,
-      "special-attack": 100,
-      "defense": 80,
-      "attack": 110,
-      "hp": 90
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 95
+      },
+      {
+        "axis": "SpDef",
+        "value": 80
+      },
+      {
+        "axis": "SpAtk",
+        "value": 100
+      },
+      {
+        "axis": "Def",
+        "value": 80
+      },
+      {
+        "axis": "Atk",
+        "value": 110
+      },
+      {
+        "axis": "HP",
+        "value": 90
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png"
   },
   "poliwag": {
@@ -973,14 +2035,32 @@
     "types": {
       "1": "water"
     },
-    "stats": {
-      "speed": 90,
-      "special-defense": 40,
-      "special-attack": 40,
-      "defense": 40,
-      "attack": 50,
-      "hp": 40
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 90
+      },
+      {
+        "axis": "SpDef",
+        "value": 40
+      },
+      {
+        "axis": "SpAtk",
+        "value": 40
+      },
+      {
+        "axis": "Def",
+        "value": 40
+      },
+      {
+        "axis": "Atk",
+        "value": 50
+      },
+      {
+        "axis": "HP",
+        "value": 40
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png"
   },
   "poliwhirl": {
@@ -989,14 +2069,32 @@
     "types": {
       "1": "water"
     },
-    "stats": {
-      "speed": 90,
-      "special-defense": 50,
-      "special-attack": 50,
-      "defense": 65,
-      "attack": 65,
-      "hp": 65
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 90
+      },
+      {
+        "axis": "SpDef",
+        "value": 50
+      },
+      {
+        "axis": "SpAtk",
+        "value": 50
+      },
+      {
+        "axis": "Def",
+        "value": 65
+      },
+      {
+        "axis": "Atk",
+        "value": 65
+      },
+      {
+        "axis": "HP",
+        "value": 65
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png"
   },
   "poliwrath": {
@@ -1006,14 +2104,32 @@
       "1": "water",
       "2": "fighting"
     },
-    "stats": {
-      "speed": 70,
-      "special-defense": 90,
-      "special-attack": 70,
-      "defense": 95,
-      "attack": 95,
-      "hp": 90
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 70
+      },
+      {
+        "axis": "SpDef",
+        "value": 90
+      },
+      {
+        "axis": "SpAtk",
+        "value": 70
+      },
+      {
+        "axis": "Def",
+        "value": 95
+      },
+      {
+        "axis": "Atk",
+        "value": 95
+      },
+      {
+        "axis": "HP",
+        "value": 90
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png"
   },
   "abra": {
@@ -1022,14 +2138,32 @@
     "types": {
       "1": "psychic"
     },
-    "stats": {
-      "speed": 90,
-      "special-defense": 55,
-      "special-attack": 105,
-      "defense": 15,
-      "attack": 20,
-      "hp": 25
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 90
+      },
+      {
+        "axis": "SpDef",
+        "value": 55
+      },
+      {
+        "axis": "SpAtk",
+        "value": 105
+      },
+      {
+        "axis": "Def",
+        "value": 15
+      },
+      {
+        "axis": "Atk",
+        "value": 20
+      },
+      {
+        "axis": "HP",
+        "value": 25
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png"
   },
   "kadabra": {
@@ -1038,14 +2172,32 @@
     "types": {
       "1": "psychic"
     },
-    "stats": {
-      "speed": 105,
-      "special-defense": 70,
-      "special-attack": 120,
-      "defense": 30,
-      "attack": 35,
-      "hp": 40
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 105
+      },
+      {
+        "axis": "SpDef",
+        "value": 70
+      },
+      {
+        "axis": "SpAtk",
+        "value": 120
+      },
+      {
+        "axis": "Def",
+        "value": 30
+      },
+      {
+        "axis": "Atk",
+        "value": 35
+      },
+      {
+        "axis": "HP",
+        "value": 40
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png"
   },
   "alakazam": {
@@ -1054,14 +2206,32 @@
     "types": {
       "1": "psychic"
     },
-    "stats": {
-      "speed": 120,
-      "special-defense": 95,
-      "special-attack": 135,
-      "defense": 45,
-      "attack": 50,
-      "hp": 55
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 120
+      },
+      {
+        "axis": "SpDef",
+        "value": 95
+      },
+      {
+        "axis": "SpAtk",
+        "value": 135
+      },
+      {
+        "axis": "Def",
+        "value": 45
+      },
+      {
+        "axis": "Atk",
+        "value": 50
+      },
+      {
+        "axis": "HP",
+        "value": 55
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png"
   },
   "machop": {
@@ -1070,14 +2240,32 @@
     "types": {
       "1": "fighting"
     },
-    "stats": {
-      "speed": 35,
-      "special-defense": 35,
-      "special-attack": 35,
-      "defense": 50,
-      "attack": 80,
-      "hp": 70
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 35
+      },
+      {
+        "axis": "SpDef",
+        "value": 35
+      },
+      {
+        "axis": "SpAtk",
+        "value": 35
+      },
+      {
+        "axis": "Def",
+        "value": 50
+      },
+      {
+        "axis": "Atk",
+        "value": 80
+      },
+      {
+        "axis": "HP",
+        "value": 70
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png"
   },
   "machoke": {
@@ -1086,14 +2274,32 @@
     "types": {
       "1": "fighting"
     },
-    "stats": {
-      "speed": 45,
-      "special-defense": 60,
-      "special-attack": 50,
-      "defense": 70,
-      "attack": 100,
-      "hp": 80
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 45
+      },
+      {
+        "axis": "SpDef",
+        "value": 60
+      },
+      {
+        "axis": "SpAtk",
+        "value": 50
+      },
+      {
+        "axis": "Def",
+        "value": 70
+      },
+      {
+        "axis": "Atk",
+        "value": 100
+      },
+      {
+        "axis": "HP",
+        "value": 80
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png"
   },
   "machamp": {
@@ -1102,14 +2308,32 @@
     "types": {
       "1": "fighting"
     },
-    "stats": {
-      "speed": 55,
-      "special-defense": 85,
-      "special-attack": 65,
-      "defense": 80,
-      "attack": 130,
-      "hp": 90
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 55
+      },
+      {
+        "axis": "SpDef",
+        "value": 85
+      },
+      {
+        "axis": "SpAtk",
+        "value": 65
+      },
+      {
+        "axis": "Def",
+        "value": 80
+      },
+      {
+        "axis": "Atk",
+        "value": 130
+      },
+      {
+        "axis": "HP",
+        "value": 90
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png"
   },
   "bellsprout": {
@@ -1119,14 +2343,32 @@
       "1": "grass",
       "2": "poison"
     },
-    "stats": {
-      "speed": 40,
-      "special-defense": 30,
-      "special-attack": 70,
-      "defense": 35,
-      "attack": 75,
-      "hp": 50
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 40
+      },
+      {
+        "axis": "SpDef",
+        "value": 30
+      },
+      {
+        "axis": "SpAtk",
+        "value": 70
+      },
+      {
+        "axis": "Def",
+        "value": 35
+      },
+      {
+        "axis": "Atk",
+        "value": 75
+      },
+      {
+        "axis": "HP",
+        "value": 50
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png"
   },
   "weepinbell": {
@@ -1136,14 +2378,32 @@
       "1": "grass",
       "2": "poison"
     },
-    "stats": {
-      "speed": 55,
-      "special-defense": 45,
-      "special-attack": 85,
-      "defense": 50,
-      "attack": 90,
-      "hp": 65
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 55
+      },
+      {
+        "axis": "SpDef",
+        "value": 45
+      },
+      {
+        "axis": "SpAtk",
+        "value": 85
+      },
+      {
+        "axis": "Def",
+        "value": 50
+      },
+      {
+        "axis": "Atk",
+        "value": 90
+      },
+      {
+        "axis": "HP",
+        "value": 65
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png"
   },
   "victreebel": {
@@ -1153,14 +2413,32 @@
       "1": "grass",
       "2": "poison"
     },
-    "stats": {
-      "speed": 70,
-      "special-defense": 70,
-      "special-attack": 100,
-      "defense": 65,
-      "attack": 105,
-      "hp": 80
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 70
+      },
+      {
+        "axis": "SpDef",
+        "value": 70
+      },
+      {
+        "axis": "SpAtk",
+        "value": 100
+      },
+      {
+        "axis": "Def",
+        "value": 65
+      },
+      {
+        "axis": "Atk",
+        "value": 105
+      },
+      {
+        "axis": "HP",
+        "value": 80
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png"
   },
   "tentacool": {
@@ -1170,14 +2448,32 @@
       "1": "water",
       "2": "poison"
     },
-    "stats": {
-      "speed": 70,
-      "special-defense": 100,
-      "special-attack": 50,
-      "defense": 35,
-      "attack": 40,
-      "hp": 40
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 70
+      },
+      {
+        "axis": "SpDef",
+        "value": 100
+      },
+      {
+        "axis": "SpAtk",
+        "value": 50
+      },
+      {
+        "axis": "Def",
+        "value": 35
+      },
+      {
+        "axis": "Atk",
+        "value": 40
+      },
+      {
+        "axis": "HP",
+        "value": 40
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png"
   },
   "tentacruel": {
@@ -1187,14 +2483,32 @@
       "1": "water",
       "2": "poison"
     },
-    "stats": {
-      "speed": 100,
-      "special-defense": 120,
-      "special-attack": 80,
-      "defense": 65,
-      "attack": 70,
-      "hp": 80
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 100
+      },
+      {
+        "axis": "SpDef",
+        "value": 120
+      },
+      {
+        "axis": "SpAtk",
+        "value": 80
+      },
+      {
+        "axis": "Def",
+        "value": 65
+      },
+      {
+        "axis": "Atk",
+        "value": 70
+      },
+      {
+        "axis": "HP",
+        "value": 80
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png"
   },
   "geodude": {
@@ -1204,14 +2518,32 @@
       "1": "rock",
       "2": "ground"
     },
-    "stats": {
-      "speed": 20,
-      "special-defense": 30,
-      "special-attack": 30,
-      "defense": 100,
-      "attack": 80,
-      "hp": 40
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 20
+      },
+      {
+        "axis": "SpDef",
+        "value": 30
+      },
+      {
+        "axis": "SpAtk",
+        "value": 30
+      },
+      {
+        "axis": "Def",
+        "value": 100
+      },
+      {
+        "axis": "Atk",
+        "value": 80
+      },
+      {
+        "axis": "HP",
+        "value": 40
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png"
   },
   "graveler": {
@@ -1221,14 +2553,32 @@
       "1": "rock",
       "2": "ground"
     },
-    "stats": {
-      "speed": 35,
-      "special-defense": 45,
-      "special-attack": 45,
-      "defense": 115,
-      "attack": 95,
-      "hp": 55
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 35
+      },
+      {
+        "axis": "SpDef",
+        "value": 45
+      },
+      {
+        "axis": "SpAtk",
+        "value": 45
+      },
+      {
+        "axis": "Def",
+        "value": 115
+      },
+      {
+        "axis": "Atk",
+        "value": 95
+      },
+      {
+        "axis": "HP",
+        "value": 55
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png"
   },
   "golem": {
@@ -1238,14 +2588,32 @@
       "1": "rock",
       "2": "ground"
     },
-    "stats": {
-      "speed": 45,
-      "special-defense": 65,
-      "special-attack": 55,
-      "defense": 130,
-      "attack": 120,
-      "hp": 80
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 45
+      },
+      {
+        "axis": "SpDef",
+        "value": 65
+      },
+      {
+        "axis": "SpAtk",
+        "value": 55
+      },
+      {
+        "axis": "Def",
+        "value": 130
+      },
+      {
+        "axis": "Atk",
+        "value": 120
+      },
+      {
+        "axis": "HP",
+        "value": 80
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png"
   },
   "ponyta": {
@@ -1254,14 +2622,32 @@
     "types": {
       "1": "fire"
     },
-    "stats": {
-      "speed": 90,
-      "special-defense": 65,
-      "special-attack": 65,
-      "defense": 55,
-      "attack": 85,
-      "hp": 50
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 90
+      },
+      {
+        "axis": "SpDef",
+        "value": 65
+      },
+      {
+        "axis": "SpAtk",
+        "value": 65
+      },
+      {
+        "axis": "Def",
+        "value": 55
+      },
+      {
+        "axis": "Atk",
+        "value": 85
+      },
+      {
+        "axis": "HP",
+        "value": 50
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png"
   },
   "rapidash": {
@@ -1270,14 +2656,32 @@
     "types": {
       "1": "fire"
     },
-    "stats": {
-      "speed": 105,
-      "special-defense": 80,
-      "special-attack": 80,
-      "defense": 70,
-      "attack": 100,
-      "hp": 65
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 105
+      },
+      {
+        "axis": "SpDef",
+        "value": 80
+      },
+      {
+        "axis": "SpAtk",
+        "value": 80
+      },
+      {
+        "axis": "Def",
+        "value": 70
+      },
+      {
+        "axis": "Atk",
+        "value": 100
+      },
+      {
+        "axis": "HP",
+        "value": 65
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png"
   },
   "slowpoke": {
@@ -1287,14 +2691,32 @@
       "1": "water",
       "2": "psychic"
     },
-    "stats": {
-      "speed": 15,
-      "special-defense": 40,
-      "special-attack": 40,
-      "defense": 65,
-      "attack": 65,
-      "hp": 90
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 15
+      },
+      {
+        "axis": "SpDef",
+        "value": 40
+      },
+      {
+        "axis": "SpAtk",
+        "value": 40
+      },
+      {
+        "axis": "Def",
+        "value": 65
+      },
+      {
+        "axis": "Atk",
+        "value": 65
+      },
+      {
+        "axis": "HP",
+        "value": 90
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"
   },
   "slowbro": {
@@ -1304,14 +2726,32 @@
       "1": "water",
       "2": "psychic"
     },
-    "stats": {
-      "speed": 30,
-      "special-defense": 80,
-      "special-attack": 100,
-      "defense": 110,
-      "attack": 75,
-      "hp": 95
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 30
+      },
+      {
+        "axis": "SpDef",
+        "value": 80
+      },
+      {
+        "axis": "SpAtk",
+        "value": 100
+      },
+      {
+        "axis": "Def",
+        "value": 110
+      },
+      {
+        "axis": "Atk",
+        "value": 75
+      },
+      {
+        "axis": "HP",
+        "value": 95
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png"
   },
   "magnemite": {
@@ -1321,14 +2761,32 @@
       "1": "electric",
       "2": "steel"
     },
-    "stats": {
-      "speed": 45,
-      "special-defense": 55,
-      "special-attack": 95,
-      "defense": 70,
-      "attack": 35,
-      "hp": 25
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 45
+      },
+      {
+        "axis": "SpDef",
+        "value": 55
+      },
+      {
+        "axis": "SpAtk",
+        "value": 95
+      },
+      {
+        "axis": "Def",
+        "value": 70
+      },
+      {
+        "axis": "Atk",
+        "value": 35
+      },
+      {
+        "axis": "HP",
+        "value": 25
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png"
   },
   "magneton": {
@@ -1338,14 +2796,32 @@
       "1": "electric",
       "2": "steel"
     },
-    "stats": {
-      "speed": 70,
-      "special-defense": 70,
-      "special-attack": 120,
-      "defense": 95,
-      "attack": 60,
-      "hp": 50
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 70
+      },
+      {
+        "axis": "SpDef",
+        "value": 70
+      },
+      {
+        "axis": "SpAtk",
+        "value": 120
+      },
+      {
+        "axis": "Def",
+        "value": 95
+      },
+      {
+        "axis": "Atk",
+        "value": 60
+      },
+      {
+        "axis": "HP",
+        "value": 50
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png"
   },
   "farfetchd": {
@@ -1355,14 +2831,32 @@
       "1": "normal",
       "2": "flying"
     },
-    "stats": {
-      "speed": 60,
-      "special-defense": 62,
-      "special-attack": 58,
-      "defense": 55,
-      "attack": 90,
-      "hp": 52
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 60
+      },
+      {
+        "axis": "SpDef",
+        "value": 62
+      },
+      {
+        "axis": "SpAtk",
+        "value": 58
+      },
+      {
+        "axis": "Def",
+        "value": 55
+      },
+      {
+        "axis": "Atk",
+        "value": 90
+      },
+      {
+        "axis": "HP",
+        "value": 52
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png"
   },
   "doduo": {
@@ -1372,14 +2866,32 @@
       "1": "normal",
       "2": "flying"
     },
-    "stats": {
-      "speed": 75,
-      "special-defense": 35,
-      "special-attack": 35,
-      "defense": 45,
-      "attack": 85,
-      "hp": 35
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 75
+      },
+      {
+        "axis": "SpDef",
+        "value": 35
+      },
+      {
+        "axis": "SpAtk",
+        "value": 35
+      },
+      {
+        "axis": "Def",
+        "value": 45
+      },
+      {
+        "axis": "Atk",
+        "value": 85
+      },
+      {
+        "axis": "HP",
+        "value": 35
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png"
   },
   "dodrio": {
@@ -1389,14 +2901,32 @@
       "1": "normal",
       "2": "flying"
     },
-    "stats": {
-      "speed": 110,
-      "special-defense": 60,
-      "special-attack": 60,
-      "defense": 70,
-      "attack": 110,
-      "hp": 60
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 110
+      },
+      {
+        "axis": "SpDef",
+        "value": 60
+      },
+      {
+        "axis": "SpAtk",
+        "value": 60
+      },
+      {
+        "axis": "Def",
+        "value": 70
+      },
+      {
+        "axis": "Atk",
+        "value": 110
+      },
+      {
+        "axis": "HP",
+        "value": 60
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png"
   },
   "seel": {
@@ -1405,14 +2935,32 @@
     "types": {
       "1": "water"
     },
-    "stats": {
-      "speed": 45,
-      "special-defense": 70,
-      "special-attack": 45,
-      "defense": 55,
-      "attack": 45,
-      "hp": 65
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 45
+      },
+      {
+        "axis": "SpDef",
+        "value": 70
+      },
+      {
+        "axis": "SpAtk",
+        "value": 45
+      },
+      {
+        "axis": "Def",
+        "value": 55
+      },
+      {
+        "axis": "Atk",
+        "value": 45
+      },
+      {
+        "axis": "HP",
+        "value": 65
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png"
   },
   "dewgong": {
@@ -1422,14 +2970,32 @@
       "1": "water",
       "2": "ice"
     },
-    "stats": {
-      "speed": 70,
-      "special-defense": 95,
-      "special-attack": 70,
-      "defense": 80,
-      "attack": 70,
-      "hp": 90
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 70
+      },
+      {
+        "axis": "SpDef",
+        "value": 95
+      },
+      {
+        "axis": "SpAtk",
+        "value": 70
+      },
+      {
+        "axis": "Def",
+        "value": 80
+      },
+      {
+        "axis": "Atk",
+        "value": 70
+      },
+      {
+        "axis": "HP",
+        "value": 90
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png"
   },
   "grimer": {
@@ -1438,14 +3004,32 @@
     "types": {
       "1": "poison"
     },
-    "stats": {
-      "speed": 25,
-      "special-defense": 50,
-      "special-attack": 40,
-      "defense": 50,
-      "attack": 80,
-      "hp": 80
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 25
+      },
+      {
+        "axis": "SpDef",
+        "value": 50
+      },
+      {
+        "axis": "SpAtk",
+        "value": 40
+      },
+      {
+        "axis": "Def",
+        "value": 50
+      },
+      {
+        "axis": "Atk",
+        "value": 80
+      },
+      {
+        "axis": "HP",
+        "value": 80
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png"
   },
   "muk": {
@@ -1454,14 +3038,32 @@
     "types": {
       "1": "poison"
     },
-    "stats": {
-      "speed": 50,
-      "special-defense": 100,
-      "special-attack": 65,
-      "defense": 75,
-      "attack": 105,
-      "hp": 105
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 50
+      },
+      {
+        "axis": "SpDef",
+        "value": 100
+      },
+      {
+        "axis": "SpAtk",
+        "value": 65
+      },
+      {
+        "axis": "Def",
+        "value": 75
+      },
+      {
+        "axis": "Atk",
+        "value": 105
+      },
+      {
+        "axis": "HP",
+        "value": 105
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png"
   },
   "shellder": {
@@ -1470,14 +3072,32 @@
     "types": {
       "1": "water"
     },
-    "stats": {
-      "speed": 40,
-      "special-defense": 25,
-      "special-attack": 45,
-      "defense": 100,
-      "attack": 65,
-      "hp": 30
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 40
+      },
+      {
+        "axis": "SpDef",
+        "value": 25
+      },
+      {
+        "axis": "SpAtk",
+        "value": 45
+      },
+      {
+        "axis": "Def",
+        "value": 100
+      },
+      {
+        "axis": "Atk",
+        "value": 65
+      },
+      {
+        "axis": "HP",
+        "value": 30
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png"
   },
   "cloyster": {
@@ -1487,14 +3107,32 @@
       "1": "water",
       "2": "ice"
     },
-    "stats": {
-      "speed": 70,
-      "special-defense": 45,
-      "special-attack": 85,
-      "defense": 180,
-      "attack": 95,
-      "hp": 50
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 70
+      },
+      {
+        "axis": "SpDef",
+        "value": 45
+      },
+      {
+        "axis": "SpAtk",
+        "value": 85
+      },
+      {
+        "axis": "Def",
+        "value": 180
+      },
+      {
+        "axis": "Atk",
+        "value": 95
+      },
+      {
+        "axis": "HP",
+        "value": 50
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png"
   },
   "gastly": {
@@ -1504,14 +3142,32 @@
       "1": "ghost",
       "2": "poison"
     },
-    "stats": {
-      "speed": 80,
-      "special-defense": 35,
-      "special-attack": 100,
-      "defense": 30,
-      "attack": 35,
-      "hp": 30
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 80
+      },
+      {
+        "axis": "SpDef",
+        "value": 35
+      },
+      {
+        "axis": "SpAtk",
+        "value": 100
+      },
+      {
+        "axis": "Def",
+        "value": 30
+      },
+      {
+        "axis": "Atk",
+        "value": 35
+      },
+      {
+        "axis": "HP",
+        "value": 30
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png"
   },
   "haunter": {
@@ -1521,14 +3177,32 @@
       "1": "ghost",
       "2": "poison"
     },
-    "stats": {
-      "speed": 95,
-      "special-defense": 55,
-      "special-attack": 115,
-      "defense": 45,
-      "attack": 50,
-      "hp": 45
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 95
+      },
+      {
+        "axis": "SpDef",
+        "value": 55
+      },
+      {
+        "axis": "SpAtk",
+        "value": 115
+      },
+      {
+        "axis": "Def",
+        "value": 45
+      },
+      {
+        "axis": "Atk",
+        "value": 50
+      },
+      {
+        "axis": "HP",
+        "value": 45
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png"
   },
   "gengar": {
@@ -1538,14 +3212,32 @@
       "1": "ghost",
       "2": "poison"
     },
-    "stats": {
-      "speed": 110,
-      "special-defense": 75,
-      "special-attack": 130,
-      "defense": 60,
-      "attack": 65,
-      "hp": 60
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 110
+      },
+      {
+        "axis": "SpDef",
+        "value": 75
+      },
+      {
+        "axis": "SpAtk",
+        "value": 130
+      },
+      {
+        "axis": "Def",
+        "value": 60
+      },
+      {
+        "axis": "Atk",
+        "value": 65
+      },
+      {
+        "axis": "HP",
+        "value": 60
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png"
   },
   "onix": {
@@ -1555,14 +3247,32 @@
       "1": "rock",
       "2": "ground"
     },
-    "stats": {
-      "speed": 70,
-      "special-defense": 45,
-      "special-attack": 30,
-      "defense": 160,
-      "attack": 45,
-      "hp": 35
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 70
+      },
+      {
+        "axis": "SpDef",
+        "value": 45
+      },
+      {
+        "axis": "SpAtk",
+        "value": 30
+      },
+      {
+        "axis": "Def",
+        "value": 160
+      },
+      {
+        "axis": "Atk",
+        "value": 45
+      },
+      {
+        "axis": "HP",
+        "value": 35
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png"
   },
   "drowzee": {
@@ -1571,14 +3281,32 @@
     "types": {
       "1": "psychic"
     },
-    "stats": {
-      "speed": 42,
-      "special-defense": 90,
-      "special-attack": 43,
-      "defense": 45,
-      "attack": 48,
-      "hp": 60
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 42
+      },
+      {
+        "axis": "SpDef",
+        "value": 90
+      },
+      {
+        "axis": "SpAtk",
+        "value": 43
+      },
+      {
+        "axis": "Def",
+        "value": 45
+      },
+      {
+        "axis": "Atk",
+        "value": 48
+      },
+      {
+        "axis": "HP",
+        "value": 60
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png"
   },
   "hypno": {
@@ -1587,14 +3315,32 @@
     "types": {
       "1": "psychic"
     },
-    "stats": {
-      "speed": 67,
-      "special-defense": 115,
-      "special-attack": 73,
-      "defense": 70,
-      "attack": 73,
-      "hp": 85
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 67
+      },
+      {
+        "axis": "SpDef",
+        "value": 115
+      },
+      {
+        "axis": "SpAtk",
+        "value": 73
+      },
+      {
+        "axis": "Def",
+        "value": 70
+      },
+      {
+        "axis": "Atk",
+        "value": 73
+      },
+      {
+        "axis": "HP",
+        "value": 85
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png"
   },
   "krabby": {
@@ -1603,14 +3349,32 @@
     "types": {
       "1": "water"
     },
-    "stats": {
-      "speed": 50,
-      "special-defense": 25,
-      "special-attack": 25,
-      "defense": 90,
-      "attack": 105,
-      "hp": 30
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 50
+      },
+      {
+        "axis": "SpDef",
+        "value": 25
+      },
+      {
+        "axis": "SpAtk",
+        "value": 25
+      },
+      {
+        "axis": "Def",
+        "value": 90
+      },
+      {
+        "axis": "Atk",
+        "value": 105
+      },
+      {
+        "axis": "HP",
+        "value": 30
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png"
   },
   "kingler": {
@@ -1619,14 +3383,32 @@
     "types": {
       "1": "water"
     },
-    "stats": {
-      "speed": 75,
-      "special-defense": 50,
-      "special-attack": 50,
-      "defense": 115,
-      "attack": 130,
-      "hp": 55
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 75
+      },
+      {
+        "axis": "SpDef",
+        "value": 50
+      },
+      {
+        "axis": "SpAtk",
+        "value": 50
+      },
+      {
+        "axis": "Def",
+        "value": 115
+      },
+      {
+        "axis": "Atk",
+        "value": 130
+      },
+      {
+        "axis": "HP",
+        "value": 55
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png"
   },
   "voltorb": {
@@ -1635,14 +3417,32 @@
     "types": {
       "1": "electric"
     },
-    "stats": {
-      "speed": 100,
-      "special-defense": 55,
-      "special-attack": 55,
-      "defense": 50,
-      "attack": 30,
-      "hp": 40
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 100
+      },
+      {
+        "axis": "SpDef",
+        "value": 55
+      },
+      {
+        "axis": "SpAtk",
+        "value": 55
+      },
+      {
+        "axis": "Def",
+        "value": 50
+      },
+      {
+        "axis": "Atk",
+        "value": 30
+      },
+      {
+        "axis": "HP",
+        "value": 40
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png"
   },
   "electrode": {
@@ -1651,14 +3451,32 @@
     "types": {
       "1": "electric"
     },
-    "stats": {
-      "speed": 150,
-      "special-defense": 80,
-      "special-attack": 80,
-      "defense": 70,
-      "attack": 50,
-      "hp": 60
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 150
+      },
+      {
+        "axis": "SpDef",
+        "value": 80
+      },
+      {
+        "axis": "SpAtk",
+        "value": 80
+      },
+      {
+        "axis": "Def",
+        "value": 70
+      },
+      {
+        "axis": "Atk",
+        "value": 50
+      },
+      {
+        "axis": "HP",
+        "value": 60
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png"
   },
   "exeggcute": {
@@ -1668,14 +3486,32 @@
       "1": "grass",
       "2": "psychic"
     },
-    "stats": {
-      "speed": 40,
-      "special-defense": 45,
-      "special-attack": 60,
-      "defense": 80,
-      "attack": 40,
-      "hp": 60
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 40
+      },
+      {
+        "axis": "SpDef",
+        "value": 45
+      },
+      {
+        "axis": "SpAtk",
+        "value": 60
+      },
+      {
+        "axis": "Def",
+        "value": 80
+      },
+      {
+        "axis": "Atk",
+        "value": 40
+      },
+      {
+        "axis": "HP",
+        "value": 60
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png"
   },
   "exeggutor": {
@@ -1685,14 +3521,32 @@
       "1": "grass",
       "2": "psychic"
     },
-    "stats": {
-      "speed": 55,
-      "special-defense": 75,
-      "special-attack": 125,
-      "defense": 85,
-      "attack": 95,
-      "hp": 95
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 55
+      },
+      {
+        "axis": "SpDef",
+        "value": 75
+      },
+      {
+        "axis": "SpAtk",
+        "value": 125
+      },
+      {
+        "axis": "Def",
+        "value": 85
+      },
+      {
+        "axis": "Atk",
+        "value": 95
+      },
+      {
+        "axis": "HP",
+        "value": 95
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png"
   },
   "cubone": {
@@ -1701,14 +3555,32 @@
     "types": {
       "1": "ground"
     },
-    "stats": {
-      "speed": 35,
-      "special-defense": 50,
-      "special-attack": 40,
-      "defense": 95,
-      "attack": 50,
-      "hp": 50
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 35
+      },
+      {
+        "axis": "SpDef",
+        "value": 50
+      },
+      {
+        "axis": "SpAtk",
+        "value": 40
+      },
+      {
+        "axis": "Def",
+        "value": 95
+      },
+      {
+        "axis": "Atk",
+        "value": 50
+      },
+      {
+        "axis": "HP",
+        "value": 50
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png"
   },
   "marowak": {
@@ -1717,14 +3589,32 @@
     "types": {
       "1": "ground"
     },
-    "stats": {
-      "speed": 45,
-      "special-defense": 80,
-      "special-attack": 50,
-      "defense": 110,
-      "attack": 80,
-      "hp": 60
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 45
+      },
+      {
+        "axis": "SpDef",
+        "value": 80
+      },
+      {
+        "axis": "SpAtk",
+        "value": 50
+      },
+      {
+        "axis": "Def",
+        "value": 110
+      },
+      {
+        "axis": "Atk",
+        "value": 80
+      },
+      {
+        "axis": "HP",
+        "value": 60
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png"
   },
   "hitmonlee": {
@@ -1733,14 +3623,32 @@
     "types": {
       "1": "fighting"
     },
-    "stats": {
-      "speed": 87,
-      "special-defense": 110,
-      "special-attack": 35,
-      "defense": 53,
-      "attack": 120,
-      "hp": 50
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 87
+      },
+      {
+        "axis": "SpDef",
+        "value": 110
+      },
+      {
+        "axis": "SpAtk",
+        "value": 35
+      },
+      {
+        "axis": "Def",
+        "value": 53
+      },
+      {
+        "axis": "Atk",
+        "value": 120
+      },
+      {
+        "axis": "HP",
+        "value": 50
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png"
   },
   "hitmonchan": {
@@ -1749,14 +3657,32 @@
     "types": {
       "1": "fighting"
     },
-    "stats": {
-      "speed": 76,
-      "special-defense": 110,
-      "special-attack": 35,
-      "defense": 79,
-      "attack": 105,
-      "hp": 50
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 76
+      },
+      {
+        "axis": "SpDef",
+        "value": 110
+      },
+      {
+        "axis": "SpAtk",
+        "value": 35
+      },
+      {
+        "axis": "Def",
+        "value": 79
+      },
+      {
+        "axis": "Atk",
+        "value": 105
+      },
+      {
+        "axis": "HP",
+        "value": 50
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png"
   },
   "lickitung": {
@@ -1765,14 +3691,32 @@
     "types": {
       "1": "normal"
     },
-    "stats": {
-      "speed": 30,
-      "special-defense": 75,
-      "special-attack": 60,
-      "defense": 75,
-      "attack": 55,
-      "hp": 90
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 30
+      },
+      {
+        "axis": "SpDef",
+        "value": 75
+      },
+      {
+        "axis": "SpAtk",
+        "value": 60
+      },
+      {
+        "axis": "Def",
+        "value": 75
+      },
+      {
+        "axis": "Atk",
+        "value": 55
+      },
+      {
+        "axis": "HP",
+        "value": 90
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png"
   },
   "koffing": {
@@ -1781,14 +3725,32 @@
     "types": {
       "1": "poison"
     },
-    "stats": {
-      "speed": 35,
-      "special-defense": 45,
-      "special-attack": 60,
-      "defense": 95,
-      "attack": 65,
-      "hp": 40
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 35
+      },
+      {
+        "axis": "SpDef",
+        "value": 45
+      },
+      {
+        "axis": "SpAtk",
+        "value": 60
+      },
+      {
+        "axis": "Def",
+        "value": 95
+      },
+      {
+        "axis": "Atk",
+        "value": 65
+      },
+      {
+        "axis": "HP",
+        "value": 40
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png"
   },
   "weezing": {
@@ -1797,14 +3759,32 @@
     "types": {
       "1": "poison"
     },
-    "stats": {
-      "speed": 60,
-      "special-defense": 70,
-      "special-attack": 85,
-      "defense": 120,
-      "attack": 90,
-      "hp": 65
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 60
+      },
+      {
+        "axis": "SpDef",
+        "value": 70
+      },
+      {
+        "axis": "SpAtk",
+        "value": 85
+      },
+      {
+        "axis": "Def",
+        "value": 120
+      },
+      {
+        "axis": "Atk",
+        "value": 90
+      },
+      {
+        "axis": "HP",
+        "value": 65
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png"
   },
   "rhyhorn": {
@@ -1814,14 +3794,32 @@
       "1": "ground",
       "2": "rock"
     },
-    "stats": {
-      "speed": 25,
-      "special-defense": 30,
-      "special-attack": 30,
-      "defense": 95,
-      "attack": 85,
-      "hp": 80
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 25
+      },
+      {
+        "axis": "SpDef",
+        "value": 30
+      },
+      {
+        "axis": "SpAtk",
+        "value": 30
+      },
+      {
+        "axis": "Def",
+        "value": 95
+      },
+      {
+        "axis": "Atk",
+        "value": 85
+      },
+      {
+        "axis": "HP",
+        "value": 80
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png"
   },
   "rhydon": {
@@ -1831,14 +3829,32 @@
       "1": "ground",
       "2": "rock"
     },
-    "stats": {
-      "speed": 40,
-      "special-defense": 45,
-      "special-attack": 45,
-      "defense": 120,
-      "attack": 130,
-      "hp": 105
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 40
+      },
+      {
+        "axis": "SpDef",
+        "value": 45
+      },
+      {
+        "axis": "SpAtk",
+        "value": 45
+      },
+      {
+        "axis": "Def",
+        "value": 120
+      },
+      {
+        "axis": "Atk",
+        "value": 130
+      },
+      {
+        "axis": "HP",
+        "value": 105
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png"
   },
   "chansey": {
@@ -1847,14 +3863,32 @@
     "types": {
       "1": "normal"
     },
-    "stats": {
-      "speed": 50,
-      "special-defense": 105,
-      "special-attack": 35,
-      "defense": 5,
-      "attack": 5,
-      "hp": 250
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 50
+      },
+      {
+        "axis": "SpDef",
+        "value": 105
+      },
+      {
+        "axis": "SpAtk",
+        "value": 35
+      },
+      {
+        "axis": "Def",
+        "value": 5
+      },
+      {
+        "axis": "Atk",
+        "value": 5
+      },
+      {
+        "axis": "HP",
+        "value": 250
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png"
   },
   "tangela": {
@@ -1863,14 +3897,32 @@
     "types": {
       "1": "grass"
     },
-    "stats": {
-      "speed": 60,
-      "special-defense": 40,
-      "special-attack": 100,
-      "defense": 115,
-      "attack": 55,
-      "hp": 65
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 60
+      },
+      {
+        "axis": "SpDef",
+        "value": 40
+      },
+      {
+        "axis": "SpAtk",
+        "value": 100
+      },
+      {
+        "axis": "Def",
+        "value": 115
+      },
+      {
+        "axis": "Atk",
+        "value": 55
+      },
+      {
+        "axis": "HP",
+        "value": 65
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png"
   },
   "kangaskhan": {
@@ -1879,14 +3931,32 @@
     "types": {
       "1": "normal"
     },
-    "stats": {
-      "speed": 90,
-      "special-defense": 80,
-      "special-attack": 40,
-      "defense": 80,
-      "attack": 95,
-      "hp": 105
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 90
+      },
+      {
+        "axis": "SpDef",
+        "value": 80
+      },
+      {
+        "axis": "SpAtk",
+        "value": 40
+      },
+      {
+        "axis": "Def",
+        "value": 80
+      },
+      {
+        "axis": "Atk",
+        "value": 95
+      },
+      {
+        "axis": "HP",
+        "value": 105
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png"
   },
   "horsea": {
@@ -1895,14 +3965,32 @@
     "types": {
       "1": "water"
     },
-    "stats": {
-      "speed": 60,
-      "special-defense": 25,
-      "special-attack": 70,
-      "defense": 70,
-      "attack": 40,
-      "hp": 30
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 60
+      },
+      {
+        "axis": "SpDef",
+        "value": 25
+      },
+      {
+        "axis": "SpAtk",
+        "value": 70
+      },
+      {
+        "axis": "Def",
+        "value": 70
+      },
+      {
+        "axis": "Atk",
+        "value": 40
+      },
+      {
+        "axis": "HP",
+        "value": 30
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png"
   },
   "seadra": {
@@ -1911,14 +3999,32 @@
     "types": {
       "1": "water"
     },
-    "stats": {
-      "speed": 85,
-      "special-defense": 45,
-      "special-attack": 95,
-      "defense": 95,
-      "attack": 65,
-      "hp": 55
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 85
+      },
+      {
+        "axis": "SpDef",
+        "value": 45
+      },
+      {
+        "axis": "SpAtk",
+        "value": 95
+      },
+      {
+        "axis": "Def",
+        "value": 95
+      },
+      {
+        "axis": "Atk",
+        "value": 65
+      },
+      {
+        "axis": "HP",
+        "value": 55
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png"
   },
   "goldeen": {
@@ -1927,14 +4033,32 @@
     "types": {
       "1": "water"
     },
-    "stats": {
-      "speed": 63,
-      "special-defense": 50,
-      "special-attack": 35,
-      "defense": 60,
-      "attack": 67,
-      "hp": 45
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 63
+      },
+      {
+        "axis": "SpDef",
+        "value": 50
+      },
+      {
+        "axis": "SpAtk",
+        "value": 35
+      },
+      {
+        "axis": "Def",
+        "value": 60
+      },
+      {
+        "axis": "Atk",
+        "value": 67
+      },
+      {
+        "axis": "HP",
+        "value": 45
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png"
   },
   "seaking": {
@@ -1943,14 +4067,32 @@
     "types": {
       "1": "water"
     },
-    "stats": {
-      "speed": 68,
-      "special-defense": 80,
-      "special-attack": 65,
-      "defense": 65,
-      "attack": 92,
-      "hp": 80
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 68
+      },
+      {
+        "axis": "SpDef",
+        "value": 80
+      },
+      {
+        "axis": "SpAtk",
+        "value": 65
+      },
+      {
+        "axis": "Def",
+        "value": 65
+      },
+      {
+        "axis": "Atk",
+        "value": 92
+      },
+      {
+        "axis": "HP",
+        "value": 80
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png"
   },
   "staryu": {
@@ -1959,14 +4101,32 @@
     "types": {
       "1": "water"
     },
-    "stats": {
-      "speed": 85,
-      "special-defense": 55,
-      "special-attack": 70,
-      "defense": 55,
-      "attack": 45,
-      "hp": 30
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 85
+      },
+      {
+        "axis": "SpDef",
+        "value": 55
+      },
+      {
+        "axis": "SpAtk",
+        "value": 70
+      },
+      {
+        "axis": "Def",
+        "value": 55
+      },
+      {
+        "axis": "Atk",
+        "value": 45
+      },
+      {
+        "axis": "HP",
+        "value": 30
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png"
   },
   "starmie": {
@@ -1976,14 +4136,32 @@
       "1": "water",
       "2": "psychic"
     },
-    "stats": {
-      "speed": 115,
-      "special-defense": 85,
-      "special-attack": 100,
-      "defense": 85,
-      "attack": 75,
-      "hp": 60
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 115
+      },
+      {
+        "axis": "SpDef",
+        "value": 85
+      },
+      {
+        "axis": "SpAtk",
+        "value": 100
+      },
+      {
+        "axis": "Def",
+        "value": 85
+      },
+      {
+        "axis": "Atk",
+        "value": 75
+      },
+      {
+        "axis": "HP",
+        "value": 60
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png"
   },
   "mr-mime": {
@@ -1992,14 +4170,32 @@
     "types": {
       "1": "psychic"
     },
-    "stats": {
-      "speed": 90,
-      "special-defense": 120,
-      "special-attack": 100,
-      "defense": 65,
-      "attack": 45,
-      "hp": 40
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 90
+      },
+      {
+        "axis": "SpDef",
+        "value": 120
+      },
+      {
+        "axis": "SpAtk",
+        "value": 100
+      },
+      {
+        "axis": "Def",
+        "value": 65
+      },
+      {
+        "axis": "Atk",
+        "value": 45
+      },
+      {
+        "axis": "HP",
+        "value": 40
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png"
   },
   "scyther": {
@@ -2009,14 +4205,32 @@
       "1": "bug",
       "2": "flying"
     },
-    "stats": {
-      "speed": 105,
-      "special-defense": 80,
-      "special-attack": 55,
-      "defense": 80,
-      "attack": 110,
-      "hp": 70
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 105
+      },
+      {
+        "axis": "SpDef",
+        "value": 80
+      },
+      {
+        "axis": "SpAtk",
+        "value": 55
+      },
+      {
+        "axis": "Def",
+        "value": 80
+      },
+      {
+        "axis": "Atk",
+        "value": 110
+      },
+      {
+        "axis": "HP",
+        "value": 70
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png"
   },
   "jynx": {
@@ -2026,14 +4240,32 @@
       "1": "ice",
       "2": "psychic"
     },
-    "stats": {
-      "speed": 95,
-      "special-defense": 95,
-      "special-attack": 115,
-      "defense": 35,
-      "attack": 50,
-      "hp": 65
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 95
+      },
+      {
+        "axis": "SpDef",
+        "value": 95
+      },
+      {
+        "axis": "SpAtk",
+        "value": 115
+      },
+      {
+        "axis": "Def",
+        "value": 35
+      },
+      {
+        "axis": "Atk",
+        "value": 50
+      },
+      {
+        "axis": "HP",
+        "value": 65
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png"
   },
   "electabuzz": {
@@ -2042,14 +4274,32 @@
     "types": {
       "1": "electric"
     },
-    "stats": {
-      "speed": 105,
-      "special-defense": 85,
-      "special-attack": 95,
-      "defense": 57,
-      "attack": 83,
-      "hp": 65
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 105
+      },
+      {
+        "axis": "SpDef",
+        "value": 85
+      },
+      {
+        "axis": "SpAtk",
+        "value": 95
+      },
+      {
+        "axis": "Def",
+        "value": 57
+      },
+      {
+        "axis": "Atk",
+        "value": 83
+      },
+      {
+        "axis": "HP",
+        "value": 65
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png"
   },
   "magmar": {
@@ -2058,14 +4308,32 @@
     "types": {
       "1": "fire"
     },
-    "stats": {
-      "speed": 93,
-      "special-defense": 85,
-      "special-attack": 100,
-      "defense": 57,
-      "attack": 95,
-      "hp": 65
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 93
+      },
+      {
+        "axis": "SpDef",
+        "value": 85
+      },
+      {
+        "axis": "SpAtk",
+        "value": 100
+      },
+      {
+        "axis": "Def",
+        "value": 57
+      },
+      {
+        "axis": "Atk",
+        "value": 95
+      },
+      {
+        "axis": "HP",
+        "value": 65
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png"
   },
   "pinsir": {
@@ -2074,14 +4342,32 @@
     "types": {
       "1": "bug"
     },
-    "stats": {
-      "speed": 85,
-      "special-defense": 70,
-      "special-attack": 55,
-      "defense": 100,
-      "attack": 125,
-      "hp": 65
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 85
+      },
+      {
+        "axis": "SpDef",
+        "value": 70
+      },
+      {
+        "axis": "SpAtk",
+        "value": 55
+      },
+      {
+        "axis": "Def",
+        "value": 100
+      },
+      {
+        "axis": "Atk",
+        "value": 125
+      },
+      {
+        "axis": "HP",
+        "value": 65
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png"
   },
   "tauros": {
@@ -2090,14 +4376,32 @@
     "types": {
       "1": "normal"
     },
-    "stats": {
-      "speed": 110,
-      "special-defense": 70,
-      "special-attack": 40,
-      "defense": 95,
-      "attack": 100,
-      "hp": 75
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 110
+      },
+      {
+        "axis": "SpDef",
+        "value": 70
+      },
+      {
+        "axis": "SpAtk",
+        "value": 40
+      },
+      {
+        "axis": "Def",
+        "value": 95
+      },
+      {
+        "axis": "Atk",
+        "value": 100
+      },
+      {
+        "axis": "HP",
+        "value": 75
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png"
   },
   "magikarp": {
@@ -2106,14 +4410,32 @@
     "types": {
       "1": "water"
     },
-    "stats": {
-      "speed": 80,
-      "special-defense": 20,
-      "special-attack": 15,
-      "defense": 55,
-      "attack": 10,
-      "hp": 20
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 80
+      },
+      {
+        "axis": "SpDef",
+        "value": 20
+      },
+      {
+        "axis": "SpAtk",
+        "value": 15
+      },
+      {
+        "axis": "Def",
+        "value": 55
+      },
+      {
+        "axis": "Atk",
+        "value": 10
+      },
+      {
+        "axis": "HP",
+        "value": 20
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png"
   },
   "gyarados": {
@@ -2123,14 +4445,32 @@
       "1": "water",
       "2": "flying"
     },
-    "stats": {
-      "speed": 81,
-      "special-defense": 100,
-      "special-attack": 60,
-      "defense": 79,
-      "attack": 125,
-      "hp": 95
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 81
+      },
+      {
+        "axis": "SpDef",
+        "value": 100
+      },
+      {
+        "axis": "SpAtk",
+        "value": 60
+      },
+      {
+        "axis": "Def",
+        "value": 79
+      },
+      {
+        "axis": "Atk",
+        "value": 125
+      },
+      {
+        "axis": "HP",
+        "value": 95
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png"
   },
   "lapras": {
@@ -2140,14 +4480,32 @@
       "1": "water",
       "2": "ice"
     },
-    "stats": {
-      "speed": 60,
-      "special-defense": 95,
-      "special-attack": 85,
-      "defense": 80,
-      "attack": 85,
-      "hp": 130
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 60
+      },
+      {
+        "axis": "SpDef",
+        "value": 95
+      },
+      {
+        "axis": "SpAtk",
+        "value": 85
+      },
+      {
+        "axis": "Def",
+        "value": 80
+      },
+      {
+        "axis": "Atk",
+        "value": 85
+      },
+      {
+        "axis": "HP",
+        "value": 130
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png"
   },
   "ditto": {
@@ -2156,14 +4514,32 @@
     "types": {
       "1": "normal"
     },
-    "stats": {
-      "speed": 48,
-      "special-defense": 48,
-      "special-attack": 48,
-      "defense": 48,
-      "attack": 48,
-      "hp": 48
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 48
+      },
+      {
+        "axis": "SpDef",
+        "value": 48
+      },
+      {
+        "axis": "SpAtk",
+        "value": 48
+      },
+      {
+        "axis": "Def",
+        "value": 48
+      },
+      {
+        "axis": "Atk",
+        "value": 48
+      },
+      {
+        "axis": "HP",
+        "value": 48
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
   },
   "eevee": {
@@ -2172,14 +4548,32 @@
     "types": {
       "1": "normal"
     },
-    "stats": {
-      "speed": 55,
-      "special-defense": 65,
-      "special-attack": 45,
-      "defense": 50,
-      "attack": 55,
-      "hp": 55
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 55
+      },
+      {
+        "axis": "SpDef",
+        "value": 65
+      },
+      {
+        "axis": "SpAtk",
+        "value": 45
+      },
+      {
+        "axis": "Def",
+        "value": 50
+      },
+      {
+        "axis": "Atk",
+        "value": 55
+      },
+      {
+        "axis": "HP",
+        "value": 55
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png"
   },
   "vaporeon": {
@@ -2188,14 +4582,32 @@
     "types": {
       "1": "water"
     },
-    "stats": {
-      "speed": 65,
-      "special-defense": 95,
-      "special-attack": 110,
-      "defense": 60,
-      "attack": 65,
-      "hp": 130
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 65
+      },
+      {
+        "axis": "SpDef",
+        "value": 95
+      },
+      {
+        "axis": "SpAtk",
+        "value": 110
+      },
+      {
+        "axis": "Def",
+        "value": 60
+      },
+      {
+        "axis": "Atk",
+        "value": 65
+      },
+      {
+        "axis": "HP",
+        "value": 130
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png"
   },
   "jolteon": {
@@ -2204,14 +4616,32 @@
     "types": {
       "1": "electric"
     },
-    "stats": {
-      "speed": 130,
-      "special-defense": 95,
-      "special-attack": 110,
-      "defense": 60,
-      "attack": 65,
-      "hp": 65
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 130
+      },
+      {
+        "axis": "SpDef",
+        "value": 95
+      },
+      {
+        "axis": "SpAtk",
+        "value": 110
+      },
+      {
+        "axis": "Def",
+        "value": 60
+      },
+      {
+        "axis": "Atk",
+        "value": 65
+      },
+      {
+        "axis": "HP",
+        "value": 65
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png"
   },
   "flareon": {
@@ -2220,14 +4650,32 @@
     "types": {
       "1": "fire"
     },
-    "stats": {
-      "speed": 65,
-      "special-defense": 110,
-      "special-attack": 95,
-      "defense": 60,
-      "attack": 130,
-      "hp": 65
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 65
+      },
+      {
+        "axis": "SpDef",
+        "value": 110
+      },
+      {
+        "axis": "SpAtk",
+        "value": 95
+      },
+      {
+        "axis": "Def",
+        "value": 60
+      },
+      {
+        "axis": "Atk",
+        "value": 130
+      },
+      {
+        "axis": "HP",
+        "value": 65
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png"
   },
   "porygon": {
@@ -2236,14 +4684,32 @@
     "types": {
       "1": "normal"
     },
-    "stats": {
-      "speed": 40,
-      "special-defense": 75,
-      "special-attack": 85,
-      "defense": 70,
-      "attack": 60,
-      "hp": 65
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 40
+      },
+      {
+        "axis": "SpDef",
+        "value": 75
+      },
+      {
+        "axis": "SpAtk",
+        "value": 85
+      },
+      {
+        "axis": "Def",
+        "value": 70
+      },
+      {
+        "axis": "Atk",
+        "value": 60
+      },
+      {
+        "axis": "HP",
+        "value": 65
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png"
   },
   "omanyte": {
@@ -2253,14 +4719,32 @@
       "1": "rock",
       "2": "water"
     },
-    "stats": {
-      "speed": 35,
-      "special-defense": 55,
-      "special-attack": 90,
-      "defense": 100,
-      "attack": 40,
-      "hp": 35
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 35
+      },
+      {
+        "axis": "SpDef",
+        "value": 55
+      },
+      {
+        "axis": "SpAtk",
+        "value": 90
+      },
+      {
+        "axis": "Def",
+        "value": 100
+      },
+      {
+        "axis": "Atk",
+        "value": 40
+      },
+      {
+        "axis": "HP",
+        "value": 35
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png"
   },
   "omastar": {
@@ -2270,14 +4754,32 @@
       "1": "rock",
       "2": "water"
     },
-    "stats": {
-      "speed": 55,
-      "special-defense": 70,
-      "special-attack": 115,
-      "defense": 125,
-      "attack": 60,
-      "hp": 70
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 55
+      },
+      {
+        "axis": "SpDef",
+        "value": 70
+      },
+      {
+        "axis": "SpAtk",
+        "value": 115
+      },
+      {
+        "axis": "Def",
+        "value": 125
+      },
+      {
+        "axis": "Atk",
+        "value": 60
+      },
+      {
+        "axis": "HP",
+        "value": 70
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png"
   },
   "kabuto": {
@@ -2287,14 +4789,32 @@
       "1": "rock",
       "2": "water"
     },
-    "stats": {
-      "speed": 55,
-      "special-defense": 45,
-      "special-attack": 55,
-      "defense": 90,
-      "attack": 80,
-      "hp": 30
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 55
+      },
+      {
+        "axis": "SpDef",
+        "value": 45
+      },
+      {
+        "axis": "SpAtk",
+        "value": 55
+      },
+      {
+        "axis": "Def",
+        "value": 90
+      },
+      {
+        "axis": "Atk",
+        "value": 80
+      },
+      {
+        "axis": "HP",
+        "value": 30
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png"
   },
   "kabutops": {
@@ -2304,14 +4824,32 @@
       "1": "rock",
       "2": "water"
     },
-    "stats": {
-      "speed": 80,
-      "special-defense": 70,
-      "special-attack": 65,
-      "defense": 105,
-      "attack": 115,
-      "hp": 60
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 80
+      },
+      {
+        "axis": "SpDef",
+        "value": 70
+      },
+      {
+        "axis": "SpAtk",
+        "value": 65
+      },
+      {
+        "axis": "Def",
+        "value": 105
+      },
+      {
+        "axis": "Atk",
+        "value": 115
+      },
+      {
+        "axis": "HP",
+        "value": 60
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png"
   },
   "aerodactyl": {
@@ -2321,14 +4859,32 @@
       "1": "rock",
       "2": "flying"
     },
-    "stats": {
-      "speed": 130,
-      "special-defense": 75,
-      "special-attack": 60,
-      "defense": 65,
-      "attack": 105,
-      "hp": 80
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 130
+      },
+      {
+        "axis": "SpDef",
+        "value": 75
+      },
+      {
+        "axis": "SpAtk",
+        "value": 60
+      },
+      {
+        "axis": "Def",
+        "value": 65
+      },
+      {
+        "axis": "Atk",
+        "value": 105
+      },
+      {
+        "axis": "HP",
+        "value": 80
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png"
   },
   "snorlax": {
@@ -2337,14 +4893,32 @@
     "types": {
       "1": "normal"
     },
-    "stats": {
-      "speed": 30,
-      "special-defense": 110,
-      "special-attack": 65,
-      "defense": 65,
-      "attack": 110,
-      "hp": 160
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 30
+      },
+      {
+        "axis": "SpDef",
+        "value": 110
+      },
+      {
+        "axis": "SpAtk",
+        "value": 65
+      },
+      {
+        "axis": "Def",
+        "value": 65
+      },
+      {
+        "axis": "Atk",
+        "value": 110
+      },
+      {
+        "axis": "HP",
+        "value": 160
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png"
   },
   "articuno": {
@@ -2354,14 +4928,32 @@
       "1": "ice",
       "2": "flying"
     },
-    "stats": {
-      "speed": 85,
-      "special-defense": 125,
-      "special-attack": 95,
-      "defense": 100,
-      "attack": 85,
-      "hp": 90
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 85
+      },
+      {
+        "axis": "SpDef",
+        "value": 125
+      },
+      {
+        "axis": "SpAtk",
+        "value": 95
+      },
+      {
+        "axis": "Def",
+        "value": 100
+      },
+      {
+        "axis": "Atk",
+        "value": 85
+      },
+      {
+        "axis": "HP",
+        "value": 90
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png"
   },
   "zapdos": {
@@ -2371,14 +4963,32 @@
       "1": "electric",
       "2": "flying"
     },
-    "stats": {
-      "speed": 100,
-      "special-defense": 90,
-      "special-attack": 125,
-      "defense": 85,
-      "attack": 90,
-      "hp": 90
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 100
+      },
+      {
+        "axis": "SpDef",
+        "value": 90
+      },
+      {
+        "axis": "SpAtk",
+        "value": 125
+      },
+      {
+        "axis": "Def",
+        "value": 85
+      },
+      {
+        "axis": "Atk",
+        "value": 90
+      },
+      {
+        "axis": "HP",
+        "value": 90
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png"
   },
   "moltres": {
@@ -2388,14 +4998,32 @@
       "1": "fire",
       "2": "flying"
     },
-    "stats": {
-      "speed": 90,
-      "special-defense": 85,
-      "special-attack": 125,
-      "defense": 90,
-      "attack": 100,
-      "hp": 90
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 90
+      },
+      {
+        "axis": "SpDef",
+        "value": 85
+      },
+      {
+        "axis": "SpAtk",
+        "value": 125
+      },
+      {
+        "axis": "Def",
+        "value": 90
+      },
+      {
+        "axis": "Atk",
+        "value": 100
+      },
+      {
+        "axis": "HP",
+        "value": 90
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png"
   },
   "dratini": {
@@ -2404,14 +5032,32 @@
     "types": {
       "1": "dragon"
     },
-    "stats": {
-      "speed": 50,
-      "special-defense": 50,
-      "special-attack": 50,
-      "defense": 45,
-      "attack": 64,
-      "hp": 41
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 50
+      },
+      {
+        "axis": "SpDef",
+        "value": 50
+      },
+      {
+        "axis": "SpAtk",
+        "value": 50
+      },
+      {
+        "axis": "Def",
+        "value": 45
+      },
+      {
+        "axis": "Atk",
+        "value": 64
+      },
+      {
+        "axis": "HP",
+        "value": 41
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png"
   },
   "dragonair": {
@@ -2420,14 +5066,32 @@
     "types": {
       "1": "dragon"
     },
-    "stats": {
-      "speed": 70,
-      "special-defense": 70,
-      "special-attack": 70,
-      "defense": 65,
-      "attack": 84,
-      "hp": 61
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 70
+      },
+      {
+        "axis": "SpDef",
+        "value": 70
+      },
+      {
+        "axis": "SpAtk",
+        "value": 70
+      },
+      {
+        "axis": "Def",
+        "value": 65
+      },
+      {
+        "axis": "Atk",
+        "value": 84
+      },
+      {
+        "axis": "HP",
+        "value": 61
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png"
   },
   "dragonite": {
@@ -2437,14 +5101,32 @@
       "1": "dragon",
       "2": "flying"
     },
-    "stats": {
-      "speed": 80,
-      "special-defense": 100,
-      "special-attack": 100,
-      "defense": 95,
-      "attack": 134,
-      "hp": 91
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 80
+      },
+      {
+        "axis": "SpDef",
+        "value": 100
+      },
+      {
+        "axis": "SpAtk",
+        "value": 100
+      },
+      {
+        "axis": "Def",
+        "value": 95
+      },
+      {
+        "axis": "Atk",
+        "value": 134
+      },
+      {
+        "axis": "HP",
+        "value": 91
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png"
   },
   "mewtwo": {
@@ -2453,14 +5135,32 @@
     "types": {
       "1": "psychic"
     },
-    "stats": {
-      "speed": 130,
-      "special-defense": 90,
-      "special-attack": 154,
-      "defense": 90,
-      "attack": 110,
-      "hp": 106
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 130
+      },
+      {
+        "axis": "SpDef",
+        "value": 90
+      },
+      {
+        "axis": "SpAtk",
+        "value": 154
+      },
+      {
+        "axis": "Def",
+        "value": 90
+      },
+      {
+        "axis": "Atk",
+        "value": 110
+      },
+      {
+        "axis": "HP",
+        "value": 106
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png"
   },
   "mew": {
@@ -2469,14 +5169,32 @@
     "types": {
       "1": "psychic"
     },
-    "stats": {
-      "speed": 100,
-      "special-defense": 100,
-      "special-attack": 100,
-      "defense": 100,
-      "attack": 100,
-      "hp": 100
-    },
+    "stats": [
+      {
+        "axis": "Spd",
+        "value": 100
+      },
+      {
+        "axis": "SpDef",
+        "value": 100
+      },
+      {
+        "axis": "SpAtk",
+        "value": 100
+      },
+      {
+        "axis": "Def",
+        "value": 100
+      },
+      {
+        "axis": "Atk",
+        "value": 100
+      },
+      {
+        "axis": "HP",
+        "value": 100
+      }
+    ],
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png"
   }
 }

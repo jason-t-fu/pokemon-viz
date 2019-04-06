@@ -1,7 +1,6 @@
 svg {
   display: block;
   margin: 0 auto;
-  border: 1px solid black;
 }
 
 img {
@@ -11,4 +10,13 @@ img {
 
 #tooltip {
   position: absolute;
+}
+
+.tooltip-title {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.tooltip-types {
+  text-align: center;
 }
