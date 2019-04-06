@@ -2,9 +2,10 @@
 function loadContent(data) {
   const tooltip = new Tooltip('#tooltip');
   const links = data.links.map(d => Object.create(d));
-  const nodes = data.nodes.map(d => Object.create(d));
-
-  const simulation = d3.forceSimulation(nodes)
+  const typeNodes = data.nodes.filter(d => POKEMON_TYPES.has(d.name)).map(d => Object.create(d));
+  const pokemonNodes = data.nodes.filter(d => !POKEMON_TYPES.has(d.name)).map(d => Object.create(d));
+  
+  const simulation = d3.forceSimulation(pokemonNodes.concat(typeNodes))
     .force('link', d3.forceLink(links).id(d => d.name))
     .force('charge', d3.forceManyBody().strength(-20))
     .force('collide', d3.forceCollide().radius(d => d.radius * 1.2))
@@ -13,8 +14,10 @@ function loadContent(data) {
   const svg = d3.select('svg')
     .attr('width', WIDTH)
     .attr('height', HEIGHT);
+  window.svg = svg;
 
-  const node = svg.selectAll('g').data(nodes);
+  const typeNode = svg.selectAll('g').data(typeNodes);
+  const pokemonNode = svg.selectAll('g').data(pokemonNodes);
   const link = svg.selectAll('g').data(links);
 
   let linkEnter = link.enter().append('g');
@@ -23,32 +26,29 @@ function loadContent(data) {
     .attr("stroke-opacity", 0.6)
     .attr('stroke-width', 1);
   
-  let nodeEnter = node.enter().append('g');
-  let circle = nodeEnter.append('circle')
+  let pokemonNodeEnter = pokemonNode.enter().append('g');
+  let pokemonCircle = pokemonNodeEnter.append('circle')
     .attr("stroke", "#fff")
     .attr("stroke-width", 1.5)
     .attr('r', d => d.radius)
     .attr('fill', d => TYPE_COLORS[d.group])
     .on('mouseover', tooltip.mouseover)
     .on('mousemove', tooltip.mousemove)
-    .on('mouseleave', tooltip.mouseleave)
+    .on('mouseleave', tooltip.mouseleave);
+  
+  let typeNodeEnter = typeNode.enter().append('g');
+  let typeCircle = typeNodeEnter.append('circle')
+    .attr("stroke", "#fff")
+    .attr("stroke-width", 1.5)
+    .attr('r', d => d.radius)
+    .attr('fill', d => TYPE_COLORS[d.group])
     .call(drag(simulation));
 
   tooltip.initialize();
 
-  // nodeText = node.filter(d => {debugger; return POKEMON_TYPES.has(d.name)})
-  //   .enter().append('text')
-  //   .text(d => d.name)
-  //   .attr('text-anchor', 'middle')
-  //   .attr('font-size', '8px')
-  //   .attr('class', 'unselectable')
-  //   .style('fill', 'white')
-  //   .style('text-transform', 'uppercase')
-  //   .style('font-family', 'sans-serif')
-  //   .style('user-select', 'none')
-  //   .call(drag(simulation));
-
-  nodeText = nodeEnter.append('text').text(d => POKEMON_TYPES.has(d.name) ? d.name : "")
+  nodeText = svg.selectAll('g').filter(d => POKEMON_TYPES.has(d.name))
+    .insert('text')
+    .text(d => d.name)
     .attr('text-anchor', 'middle')
     .attr('font-size', '8px')
     .attr('class', 'unselectable')
@@ -58,13 +58,26 @@ function loadContent(data) {
     .style('user-select', 'none')
     .call(drag(simulation));
 
+  // nodeText = nodeEnter.append('text').text(d => POKEMON_TYPES.has(d.name) ? d.name : "")
+  //   .attr('text-anchor', 'middle')
+  //   .attr('font-size', '8px')
+  //   .attr('class', 'unselectable')
+  //   .style('fill', 'white')
+  //   .style('text-transform', 'uppercase')
+  //   .style('font-family', 'sans-serif')
+  //   .style('user-select', 'none')
+  //   .call(drag(simulation));
+
   simulation.on('tick', () => {
 
-    circle.attr('cx', d => d.x = Math.max(d.radius, Math.min(WIDTH - d.radius, d.x)))
+    typeCircle.attr('cx', d => d.x = Math.max(d.radius, Math.min(WIDTH - d.radius, d.x)))
+      .attr('cy', d => d.y = Math.max(d.radius, Math.min(HEIGHT - d.radius, d.y)));
+
+    pokemonCircle.attr('cx', d => d.x = Math.max(d.radius, Math.min(WIDTH - d.radius, d.x)))
       .attr('cy', d => d.y = Math.max(d.radius, Math.min(HEIGHT - d.radius, d.y)));
 
     nodeText.attr('x', d => d.x = Math.max(d.radius, Math.min(WIDTH - d.radius, d.x)))
-      .attr('y', d => d.y = Math.max(d.radius, Math.min(HEIGHT - d.radius, d.y)) + 2);
+      .attr('y', d => d.y = Math.max(d.radius, Math.min(HEIGHT - d.radius, d.y)));
 
     line.attr('x1', d => d.source.x)
       .attr('y1', d => d.source.y)
