@@ -51,11 +51,12 @@ function loadContent(data) {
     .text(d => d.name)
     .attr('text-anchor', 'middle')
     .attr('font-size', '8px')
-    .attr('class', 'unselectable')
+    .attr('class', 'node-text')
     .style('fill', 'white')
     .style('text-transform', 'uppercase')
     .style('font-family', 'sans-serif')
     .style('user-select', 'none')
+    .style('transform', 'translateY(2px)')
     .call(drag(simulation));
 
   // nodeText = nodeEnter.append('text').text(d => POKEMON_TYPES.has(d.name) ? d.name : "")
