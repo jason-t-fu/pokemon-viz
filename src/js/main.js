@@ -85,7 +85,7 @@ function dimNodes(nodeType) {
   d3.selectAll('line').attr('stroke-opacity', 0);
 }
 
-function setDefault(nodeType) {
+function setDefault() {
   d3.selectAll('circle').attr('opacity', 1);
   d3.selectAll('line').attr('stroke-opacity', 0.6);
 }
