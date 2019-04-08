@@ -34,6 +34,15 @@ document.addEventListener('DOMContentLoaded', () => {
     window.root = root;
     loadContent(root);
   });
+
+  document.getElementById('type-highlight')
+          .addEventListener('mouseover', () => dimNodes('pokemon'));
+  document.getElementById('type-highlight')
+          .addEventListener('mouseleave', setDefault);
+  document.getElementById('pokemon-highlight')
+          .addEventListener('mouseover', () => dimNodes('type'));
+  document.getElementById('pokemon-highlight')
+          .addEventListener('mouseleave', setDefault);
 });
 
 function createDataAndLinks(pokemonData) {
@@ -47,7 +56,7 @@ function createDataAndLinks(pokemonData) {
     data.nodes.push({
       name: type,
       group: type,
-      radius: 20
+      radius: 22
     });
   });
 
@@ -69,4 +78,14 @@ function createDataAndLinks(pokemonData) {
   });
   
   return data;
+}
+
+function dimNodes(nodeType) {
+  d3.selectAll(`.node-${nodeType}`).attr('opacity', 0.2);
+  d3.selectAll('line').attr('stroke-opacity', 0);
+}
+
+function setDefault(nodeType) {
+  d3.selectAll('circle').attr('opacity', 1);
+  d3.selectAll('line').attr('stroke-opacity', 0.6);
 }

@@ -14,8 +14,21 @@
   <script src="js/main.js"></script>
 </head>
 <body>
-  <img src="assets/pokemon_logo.svg">
-  <svg></svg>
+  <main>
+    <section>
+      <img src="assets/PokemonLogo.svg">
+      <h2>A visualization of the original 151 Pokemon</h2>
+      <p>In an attempt to understand D3, I created a force-directed graph showing the relationships between each Pokemon and
+        its respective types.</p>
+      <p>Rearrange the nodes by dragging the <span id='type-highlight'>type nodes</span>.</p>
+      <p>Hovering over the <span id='pokemon-highlight'>Pokemon nodes</span> will bring up a detail tooltip, displaying the name, types, and stats for the
+        selected Pokemon.</p>
+      <footer>
+      </footer>
+    </section>
+    <svg></svg>
+  </main>
+  
   <div id="tooltip"></div>
 </body>
 </html>

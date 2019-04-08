@@ -5,10 +5,10 @@
 /////////// Inspired by the code of alangrafu ///////////
 /////////////////////////////////////////////////////////
 
-function RadarChart(id, data, options) {
+function RadarChart(id, pokemonData) {
   var cfg = {
-    w: 200,				//Width of the circle
-    h: 200,				//Height of the circle
+    w: 175,				//Width of the circle
+    h: 175,				//Height of the circle
     margin: { top: 30, right: 35, bottom: 30, left: 30 }, //The margins of the SVG
     levels: 5,				//How many levels or inner circles should there be drawn
     maxValue: 255, 			//What is the value that the biggest circle will represent
@@ -19,9 +19,9 @@ function RadarChart(id, data, options) {
     opacityCircles: 0.1, 	//The opacity of the circles of each blob
     strokeWidth: 2, 		//The width of the stroke around each blob
     roundStrokes: false,	//If true the area and stroke will follow a round path (cardinal-closed)
-    color: d3.scaleOrdinal(data)
-      .range(["#EDC951", "#CC333F", "#00A0B0"])	//Color function
   };
+
+  var data = [pokemonData.stats];
 
   //Put all of the options into a variable called cfg
   if ('undefined' !== typeof options) {
@@ -51,8 +51,7 @@ function RadarChart(id, data, options) {
   var svg = d3.select(id).append("svg")
     .attr("width", cfg.w + cfg.margin.left + cfg.margin.right)
     .attr("height", cfg.h + cfg.margin.top + cfg.margin.bottom)
-    .attr("class", "radar")
-    .style("font-family", "sans-serif");
+    .attr("class", "radar");
   //Append a g element		
   var g = svg.append("g")
     .attr("transform", "translate(" + (cfg.w / 2 + cfg.margin.left) + "," + (cfg.h / 2 + cfg.margin.top) + ")");
@@ -122,9 +121,9 @@ function RadarChart(id, data, options) {
   //Append the labels at each axis
   axis.append("text")
     .attr("class", "legend")
-    .style("font-size", "11px")
+    .style("font-size", "16px")
     .attr("text-anchor", "middle")
-    .attr("dy", "0.35em")
+    .attr("dy", "0.3em")
     .attr("x", function (d, i) { return rScale(cfg.maxValue * cfg.labelFactor) * Math.cos(angleSlice * i - Math.PI / 2); })
     .attr("y", function (d, i) { return rScale(cfg.maxValue * cfg.labelFactor) * Math.sin(angleSlice * i - Math.PI / 2); })
     .text(function (d) { return d })
@@ -150,7 +149,7 @@ function RadarChart(id, data, options) {
     .append("path")
     .attr("class", "radarArea")
     .attr("d", function (d, i) { return radarLine(d); })
-    .style("fill", function (d, i) { return cfg.color(i); })
+    .style("fill", TYPE_COLORS[pokemonData.group])
     .style("fill-opacity", cfg.opacityArea);
 
   //Create the outlines	
@@ -158,7 +157,7 @@ function RadarChart(id, data, options) {
     .attr("class", "radarStroke")
     .attr("d", function (d, i) { return radarLine(d.concat(d[0])); })
     .style("stroke-width", cfg.strokeWidth + "px")
-    .style("stroke", function (d, i) { return cfg.color(i); })
+    .style("stroke", TYPE_COLORS[pokemonData.group])
     .style("fill", "none")
     .style("filter", "url(#glow)");
 

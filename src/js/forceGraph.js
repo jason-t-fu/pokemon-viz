@@ -22,12 +22,13 @@ function loadContent(data) {
 
   let linkEnter = link.enter().append('g');
   let line = linkEnter.append('line')
-    .attr("stroke", "#999")
+    .attr("stroke", d => TYPE_COLORS[d.target.group])
     .attr("stroke-opacity", 0.6)
     .attr('stroke-width', 1);
   
   let pokemonNodeEnter = pokemonNode.enter().append('g');
   let pokemonCircle = pokemonNodeEnter.append('circle')
+    .attr("class", "node-pokemon")
     .attr("stroke", "#fff")
     .attr("stroke-width", 1.5)
     .attr('r', d => d.radius)
@@ -38,6 +39,7 @@ function loadContent(data) {
   
   let typeNodeEnter = typeNode.enter().append('g');
   let typeCircle = typeNodeEnter.append('circle')
+    .attr("class", "node-type")
     .attr("stroke", "#fff")
     .attr("stroke-width", 1.5)
     .attr('r', d => d.radius)
@@ -50,24 +52,14 @@ function loadContent(data) {
     .insert('text')
     .text(d => d.name)
     .attr('text-anchor', 'middle')
-    .attr('font-size', '8px')
+    .attr('font-size', '12px')
+    .attr('letter-spacing', '0.5px')
     .attr('class', 'node-text')
     .style('fill', 'white')
     .style('text-transform', 'uppercase')
-    .style('font-family', 'sans-serif')
     .style('user-select', 'none')
-    .style('transform', 'translateY(2px)')
+    .style('transform', 'translateY(3px)')
     .call(drag(simulation));
-
-  // nodeText = nodeEnter.append('text').text(d => POKEMON_TYPES.has(d.name) ? d.name : "")
-  //   .attr('text-anchor', 'middle')
-  //   .attr('font-size', '8px')
-  //   .attr('class', 'unselectable')
-  //   .style('fill', 'white')
-  //   .style('text-transform', 'uppercase')
-  //   .style('font-family', 'sans-serif')
-  //   .style('user-select', 'none')
-  //   .call(drag(simulation));
 
   simulation.on('tick', () => {
 

@@ -1,6 +1,50 @@
+@font-face {
+  font-family: 'Pokemon-Pixel-Font';
+  src: url('../assets/Pokemon-Pixel-Font.svg#Pokemon-Pixel-Font') format('svg'),
+       url('../assets/Pokemon-Pixel-Font.ttf') format('truetype'),
+       url('../assets/Pokemon-Pixel-Font.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PokemonFont';
+  src: url('../assets/PokemonFont.eot');
+  src: url('../assets/PokemonFont.eot?#iefix') format('embedded-opentype'),
+       url('../assets/PokemonFont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Pokemon-Pixel-Font', 'PokemonFont', sans-serif;
+  background: #f0e8e8;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  margin: 10% auto;
+  width: 90%;
+}
+
+section {
+  width: min-content;
+}
+
+section h2 {
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+section p {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
 svg {
   display: block;
-  margin: 0 auto;
 }
 
 img {
@@ -15,8 +59,31 @@ img {
 .tooltip-title {
   text-transform: capitalize;
   text-align: center;
+  font-size: 24px;
+  margin: 10px 0;
 }
 
 .tooltip-types {
   text-align: center;
+  margin: 10px 0;
+}
+
+.tooltip-types > div {
+  display: inline-block;
+  width: 59px;
+  height: 19px;
+  color: #fff;
+  border: 1px solid #6D6D4E;
+  border-radius: 20px;
+  text-transform: capitalize;
+  /* font-family: sans-serif; */
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#pokemon-highlight,
+#type-highlight {
+  text-decoration: underline dashed;
+  color: #602fff;
+  cursor: default;
 }

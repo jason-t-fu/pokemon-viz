@@ -24,10 +24,10 @@ Tooltip.prototype.mousemove = function (d) {
   let midY = window.innerHeight / 2;
   let x = event.x;
   let y = event.y;
-  let tooltipWidth = 279;
-  let tooltipHeight = 406;
+  let tooltipWidth = 254;
+  let tooltipHeight = 387;
 
-  //279x406
+  //254x387
   if  (x > midX && y > midY) {//Quadrant 4
     x -= (tooltipWidth + 10);
     y -= (tooltipHeight + 10);
@@ -52,11 +52,13 @@ Tooltip.prototype.mousemove = function (d) {
 
 Tooltip.prototype.mouseleave = function (d) {
   this.tooltip.style('opacity', 0)
-    .style('left', '-256px')
+    .style('left', '-279px')
     .style('top', '0px');
 
+  d3.select('.tooltip-types').selectAll('div').remove();
+
   d3.select(this.circles[d.index])
-    .style('stroke', 'none');
+    .style('stroke', 'white');
 };
 
 Tooltip.prototype.initialize = function() {
@@ -85,14 +87,22 @@ Tooltip.prototype.initialize = function() {
     .attr('class', 'tooltip-title');
   this.tooltip.append('div')
     .attr('class', 'tooltip-types');
-  
-  //Call function to draw the Radar chart
-  RadarChart('#tooltip', [dummyData]);
 };
 
 Tooltip.prototype.updateInfo = function (d) {
+  let types = Object.values(d.types);
+
+  types.forEach((type, i) => {
+    d3.select('.tooltip-types')
+      .append('div')
+      .html(type)
+      .style('background', TYPE_COLORS[type])
+      .style('margin-left', i === 0 ? 0 : '5px');
+  });
+
   d3.select(".tooltip-image").attr('src', d.sprite);
   d3.select(".tooltip-title").html(d.name);
-  d3.select(".tooltip-types").html(Object.values(d.types).join(', '));
-  RadarChart('#tooltip', [d.stats]);
+  // d3.select('.tooltip-types').append(y => {debugger; return d;})
+  // d3.select(".tooltip-types").html(Object.values(d.types).join(', '));
+  RadarChart('#tooltip', d);
 };
