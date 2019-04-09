@@ -19,8 +19,10 @@ async function writePokemon() {
 
     let types = {};
     pokemonInfo.types.forEach(entry => {
-      // Need specific case for fairy type, nonexistent in Gen 1
-      if (entry.type.name !== 'fairy') types[entry.slot] = entry.type.name;
+      // Need specific case for fairy and steel types, nonexistent in Gen 1
+      if (entry.type.name !== 'fairy' && entry.type.name !== 'steel') {
+        types[entry.slot] = entry.type.name;
+      }
     });
     // Then check for empty types (clefairy and clefable)
     if (!Object.keys(types).length) types[1] = "normal";
@@ -44,7 +46,7 @@ async function writePokemon() {
     // await delayNextQuery();
   }
 
-  fs.writeFile('src/assets/pokemonData.json', JSON.stringify(stringifiedData), err => {
+  fs.writeFile('assets/pokemonData.json', JSON.stringify(stringifiedData), err => {
     if (err) throw err;
     console.log('File has been saved.');
   });

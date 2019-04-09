@@ -2758,8 +2758,7 @@
     "id": 81,
     "name": "magnemite",
     "types": {
-      "1": "electric",
-      "2": "steel"
+      "1": "electric"
     },
     "stats": [
       {
@@ -2793,8 +2792,7 @@
     "id": 82,
     "name": "magneton",
     "types": {
-      "1": "electric",
-      "2": "steel"
+      "1": "electric"
     },
     "stats": [
       {
