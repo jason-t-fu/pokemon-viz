@@ -96,8 +96,14 @@ footer {
 #pokemon-highlight,
 #type-highlight {
   text-decoration: underline dashed;
-  color: #602fff;
+  color: #997aff;
   cursor: default;
+  transition: color 0.3s;
+}
+
+#pokemon-highlight:hover,
+#type-highlight:hover {
+  color: #5c2bfd;
 }
 
 line,
